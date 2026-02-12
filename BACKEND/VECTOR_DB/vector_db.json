@@ -1,0 +1,124 @@
+{
+  "service_identity": {
+    "purpose": "Answer → What exactly is this service?",
+    "why_it_matters": "Without identity vectors, services blend together and cosine similarity becomes noisy.",
+    "chunk_examples": [
+      "Service overview",
+      "What the service does",
+      "Target customers",
+      "Business positioning"
+    ],
+    "used_for": [
+      "Primary service identification",
+      "Preventing irrelevant matches"
+    ]
+  },
+  "service_capabilities": {
+    "purpose": "Answer → What can this service actually do?",
+    "why_it_matters": "This is the strongest semantic signal in service matching.",
+    "chunk_examples": [
+      "Feature descriptions",
+      "Functional abilities",
+      "Automation scope",
+      "AI techniques used (NLP, OCR, ML, RPA)"
+    ],
+    "used_for": [
+      "Core cosine similarity scoring",
+      "Capability-to-need matching"
+    ]
+  },
+  "service_technologies": {
+    "purpose": "Answer → How is this service implemented?",
+    "why_it_matters": "Prevents false positives when two services solve similar problems but use incompatible tech.",
+    "chunk_examples": [
+      "Tech stack",
+      "AI models",
+      "Frameworks",
+      "Cloud platforms",
+      "Integrations"
+    ],
+    "used_for": [
+      "Technical feasibility filtering",
+      "Engineering-aligned matching"
+    ]
+  },
+  "service_intent": {
+    "purpose": "Answer → Why does this service exist?",
+    "why_it_matters": "Intent alignment improves relevance when problem statements are high-level.",
+    "chunk_examples": [
+      "Business outcomes",
+      "Goals achieved",
+      "KPIs impacted",
+      "Value proposition"
+    ],
+    "used_for": [
+      "High-level problem-to-solution matching",
+      "Executive-facing relevance"
+    ]
+  },
+  "service_problems": {
+    "purpose": "Answer → Which problems does this service solve?",
+    "why_it_matters": "This aligns directly with automation problem statements.",
+    "chunk_examples": [
+      "Pain points",
+      "Operational inefficiencies",
+      "Manual workflows replaced",
+      "Industry challenges addressed"
+    ],
+    "used_for": [
+      "Problem-driven retrieval",
+      "Strong RAG grounding"
+    ]
+  },
+  "service_industries": {
+    "purpose": "Answer → Where does this service apply?",
+    "chunk_examples": [
+      "Industry-specific use cases",
+      "Sector terminology",
+      "Compliance context"
+    ],
+    "used_for": [
+      "Industry-aware ranking",
+      "Noise reduction"
+    ]
+  },
+  "service_use_cases": {
+    "purpose": "Answer → How is this service used in practice?",
+    "chunk_examples": [
+      "Scenarios",
+      "Case studies",
+      "Workflow descriptions"
+    ],
+    "used_for": [
+      "Retrieval explanation",
+      "Sales enablement",
+      "RAG answer grounding"
+    ]
+  },
+  "service_constraints": {
+    "purpose": "Answer → When should this NOT be used?",
+    "chunk_examples": [
+      "Limitations",
+      "Data requirements",
+      "Assumptions"
+    ],
+    "used_for": [
+      "Preventing hallucinated recommendations",
+      "Trustworthy AI output"
+    ]
+  },
+  "service_figures_and_competitiveness": {
+    "purpose": "Answer → How strong and competitive is this service?",
+    "chunk_examples": [
+      "Performance metrics",
+      "Benchmarks",
+      "Differentiators",
+      "Competitive advantages"
+    ],
+    "used_for": [
+      "Confidence scoring",
+      "Competitive positioning",
+      "Decision justification"
+    ]
+  }
+}

@@ -1,0 +1,356 @@
+I have successfully completed the extraction for the 'Customer Experience' category under the 'Services' tab. 
+
+The following items were processed:
+1. UI/UX (extracted_content_0.md)
+2. Website Redesigning (extracted_content_1.md)
+3. Content Management System (CMS) (extracted_content_2.md)
+4. Customer & Channel Portal (extracted_content_3.md)
+5. Customer Relationship Management (CRM) (extracted_content_4.md)
+
+Each page was scrolled from top to bottom, and content was extracted into the specified format. No accordions or PDF links were found on these specific pages. The todo.md file has been updated to reflect the completion of all phases for this category.
+
+Attachments:
+
+extracted_content_0.md:
+<url>
+https://intglobal.com/services/ui-ux/
+</url>
+<query>
+Extract content for the UI/UX page. \nENTITY TYPE: \nTOP LEVEL TAB: Services\nLEFT CATEGORY: Customer Experience\nTITLE: \nOVERVIEW: \nCAPABILITIES: \nBUSINESS VALUE: \nTARGET USERS / INDUSTRIES: \nPROCESS / APPROACH: \nTECHNOLOGIES: \nPAGE URL: https://intglobal.com/services/ui-ux/\n\nPreserve paragraphs. Do not rewrite. Do not compress.
+</query>
+<result>
+ENTITY TYPE: Service Page  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: Customer Experience  
+TITLE: User Interface and User Experience (UI/UX)  
+
+OVERVIEW:  
+They Click, Or They Leave. Your Interface and Offered Experience Decide.  
+At Indus Net Technologies (INT.), we fuse UI and UX into one competitive edge — sleek design backed by frictionless journeys that drive measurable outcomes.  
+- Intuitive interfaces that accelerate adoption  
+- Seamless flows that cut drop-offs and boost completions  
+- Research-driven design validated with real users  
+- Consistent design systems across web & mobile  
+- Measurable ROI: more engagement, more retention, more revenue  
+Outdated UI/UX isn’t just ugly — it’s expensive. Today, experience *is* the product  
+
+CAPABILITIES:  
+What Modern UI/UX Must Deliver:  
+- Continuous Design Optimization: UX feedback loops, analytics-informed improvements  
+- User-First Methodology: Behavior research, real-world testing, and emotional mapping.  
+- Figma-Centric Delivery: Tokenized design systems, reusable UI libraries, developer-ready.  
+- Speed-to-Value: MVPs in weeks, not quarters.  
+- Accessibility Built-In: WCAG 2.1, GDPR, HIPAA by default.  
+- DesignOps at Scale: Systems, not silos. Coherence across teams and products.  
+- Cross-Industry Insights: BFSI, Healthcare, SaaS, and Retail best practices baked in.  
+- Conversion-Driven UX: Every interaction mapped to business goals, not just aesthetics  
+
+INT. Designs Interfaces That Win Business:  
+- User-First Methodology: Behavior research, real-world testing, and emotional mapping.  
+- Figma-Centric Delivery: Tokenized design systems, reusable UI libraries, developer-ready.  
+- Scalability: MVPs in weeks, not quarters.  
+- Accessibility Built-In: WCAG 2.1, GDPR, HIPAA by default.  
+- DesignOps at Scale: Systems, not silos. Coherence across teams and products.  
+- Cross-Industry Insights: BFSI, Healthcare, SaaS, and Retail best practices baked in.  
+
+BUSINESS VALUE:   
+Great UX isn’t art. It’s engineered empathy. At INT., we don’t deliver mockups — we deliver measurable UX outcomes.
+
+Statistics cited on impact of UI/UX quality:
+- 38% of users stop engaging if UI/layout is unattractive ([UserGuiding](https://userguiding.com/blog/ux-statistics-trends)).  
+- 45% drop in customer support costs after implementing great UX ([Maze](https://maze.co/blog/ux-statistics/)).  
+
+PROCESS / APPROACH:
+INT.’s approach includes user-first methodology with behavior research and emotional mapping; continuous design optimization through feedback loops; Figma-centric delivery with tokenized design systems; speed-to-value with MVPs delivered in weeks; accessibility compliance by default; DesignOps for scalable coherent systems; and leveraging cross-industry insights.
+
+CASE STUDY HIGHLIGHT:
+Fintech Platform Sees Data Completeness and Bounce Drop with INT. UI/UX-Led Approach
+- 54% reduction in drop-offs at the appointment booking stage.
+- 67% increase in mobile-based diagnostic orders within 3 months of go-live.
+
+TARGET USERS / INDUSTRIES:
+Cross-industry insights include BFSI (Banking, Financial Services & Insurance), Healthcare (Life Sciences), SaaS platforms, and Retail sectors.
+
+TECHNOLOGIES:
+Figma-centric delivery using tokenized design systems and reusable UI libraries for developer-ready outputs.
+
+PAGE URL:
+https://intglobal.com/services/ui-ux/
+</result>
+
+extracted_content_1.md:
+<url>
+https://intglobal.com/services/website-redesign/
+</url>
+<query>
+Extract content for the Website Redesigning page. \nENTITY TYPE: \nTOP LEVEL TAB: Services\nLEFT CATEGORY: Customer Experience\nTITLE: \nOVERVIEW: \nCAPABILITIES: \nBUSINESS VALUE: \nTARGET USERS / INDUSTRIES: \nPROCESS / APPROACH: \nTECHNOLOGIES: \nPAGE URL: https://intglobal.com/services/website-redesign/\n\nPreserve paragraphs. Do not rewrite. Do not compress.
+</query>
+<result>
+ENTITY TYPE: Service Page  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: Customer Experience  
+TITLE: Website Redesign  
+
+OVERVIEW:  
+Website Redesign  
+From Presence to Performance, Your Website Isn’t Just a Digital Identity, It’s a Business Growth Engine.  
+
+A Website That Doesn’t Convert Is Dead Weight  
+At Indus Net Technologies (INT.), redesign means a revenue engine — sleek, fast, and optimized to capture intent before it bounces.  
+- 3-second load guarantee — or customers leave  
+- CXO-friendly dashboards that show conversion lifts  
+- CRO-first layouts engineered to sell, not just look pretty  
+- SEO + performance baked in, not bolted on  
+- A/B-tested designs that prove ROI, not guess it  
+**A basic website talks.  A performance website sells.**  
+
+Why INT. Doesn’t Just Redesign Websites — We Reengineer Them Across 7 Dimensions  
+INT. transforms enterprise websites across seven performance-critical dimensions to ensure your site becomes an active driver of revenue, reach, and resilience.  
+
+CAPABILITIES (7 Dimensions):  
+- Speed: Every second counts. We engineer for <3s load times using CDN, lazy loading, code minification, and Core Web Vitals optimization.  
+- Security: With DevSecOps, SOC2, and GDPR baked in, we protect user trust, ensure compliance, and prevent data risks before they appear.  
+- Scalability: Modular, headless builds and cloud-native infra mean your website grows with your business — without tech debt.  
+- UX Fluidity: Persona-driven designs, accessibility (WCAG 2.1 AA), and responsive UI ensure delightful journeys on every device.  
+- Sustainability: Low-carbon hosting, clean code, and CMS-driven updates reduce TCO and refresh cycles while meeting ESG goals.  
+- Compliance: From SEBI and HIPAA to GDPR and WCAG, our redesigns meet global and industry-specific mandates — by design.  
+- Data & Insights: Built-in dashboards, GA4, Mixpanel, and Hotjar integrations give you real-time feedback to optimize performance, not guess at it.  
+
+These 7 dimensions form our **Enterprise Experience Framework™** — a proprietary model that ensures no blind spots, only bold outcomes.  
+
+BUSINESS VALUE:  
+- Higher average conversion rates from A/B tested website designs (49% increase).  
+- Average annual conversion increase from visitor-focused redesigns (178%).  
+
+TARGET USERS / INDUSTRIES: Not explicitly listed on the page but implied focus on enterprises needing high-performing websites with compliance needs; case study includes banking sector (DCB Bank).  
+
+PROCESS / APPROACH: Not detailed step-by-step but includes engineering for speed (<3 seconds load), security compliance baked in (DevSecOps etc.), modular scalable architecture (headless CMS), persona-driven UX design with accessibility compliance (WCAG 2.1 AA), sustainability practices (low-carbon hosting), compliance readiness for regulations like GDPR/SEBI/HIPAA/WCAG; data-driven insights via integrated analytics dashboards for real-time decision making; A/B testing for CRO-first layouts; SEO and performance optimization integrated from the start; CXO-friendly dashboards for conversion tracking.
+
+TECHNOLOGIES: Mentioned technologies/practices include CDN, lazy loading, code minification, Core Web Vitals optimization; DevSecOps practices; SOC2 compliance; GDPR alignment; headless CMS architecture; cloud-native infrastructure; WCAG 2.1 AA accessibility standards; integration with GA4 (Google Analytics 4), Mixpanel analytics tool, Hotjar user behavior analytics.
+
+PAGE URL: https://intglobal.com/services/website-redesign/
+</result>
+
+extracted_content_2.md:
+<url>
+https://intglobal.com/services/content-management-system/
+</url>
+<query>
+Extract content for the Content Management System (CMS) page. \nENTITY TYPE: \nTOP LEVEL TAB: Services\nLEFT CATEGORY: Customer Experience\nTITLE: \nOVERVIEW: \nCAPABILITIES: \nBUSINESS VALUE: \nTARGET USERS / INDUSTRIES: \nPROCESS / APPROACH: \nTECHNOLOGIES: \nPAGE URL: https://intglobal.com/services/content-management-system/\n\nPreserve paragraphs. Do not rewrite. Do not compress.
+</query>
+<result>
+ENTITY TYPE: Content Management System (CMS) page  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: Customer Experience  
+PAGE URL: https://intglobal.com/services/content-management-system/
+
+TITLE: Content Management System (CMS)
+
+OVERVIEW:  
+Content Should Drive Growth, Not Chaos
+
+Content That Moves as Fast as Your Market  
+At Indus Net Technologies (INT.), CMS means speed, control, and freedom — turning every content update into an opportunity to outpace competitors.  
+- Publish in minutes, not days — no IT dependency  
+- Multi-channel content delivery from one source of truth  
+- Modular, future-proof architecture built to expand  
+- Multi-language/localization baked in for global scale  
+- Deep CRM & analytics integrations for measurable reach  
+
+An outdated CMS isn’t just a bottleneck. It’s a growth blocker.
+
+CAPABILITIES:  
+What High-Performance Content Platforms Must Enable
+
+Today’s marketing demands more than simple publishing. Enterprises expect:
+
+- Self-Serve Content Management: No-code editing, no IT bottlenecks  
+- Built-In Content Governance: Approval workflows, version control, and audit trails for brand consistency  
+- Scalable, Modular Architecture: Future-ready foundation for growth  
+- Enterprise-Grade Security & Compliance: ISO 27001, GDPR-ready practices  
+- Seamless Integrations: CRM, automation, analytics, ecommerce, and more  
+- Lightning-Fast Performance: SEO-first, mobile-optimized delivery  
+- Personalized Experiences at Scale: AI-powered targeting and content variants  
+- Omnichannel Content Orchestration: Unified stories across all touchpoints  
+
+BUSINESS VALUE:  
+Your CMS must be more than a backend. It must be a marketing engine.
+
+Why INT. Is the CMS Partner You Need
+
+INT. doesn’t just implement CMS solutions — we create digital ecosystems that grow with your brand:
+
+- Platform-Agnostic Expertise: Drupal, WordPress, Magento, Shopify, Contentful, Optimizely, and more  
+- Cloud-Native Foundations: AWS, Azure, GCP architectures built for resilience and scalability  
+- Security-First Delivery: SO 27001, SOC 2, CMMI L3 certified protocols baked into every deployment  
+- AI-Powered Personalization: Content that adapts to the user, not the other way around  
+- Composable & Modular Builds: Future-proof, API-first design for speed and flexibility  
+- Accelerators for Speed: Reusable templates, workflows, and DevOps automation reduce go-live time  
+
+We don’t just build CMS platforms. We build marketing velocity.
+
+TARGET USERS / INDUSTRIES: Not explicitly listed on this page; however INT.'s services are generally targeted at enterprises requiring scalable content management solutions with multi-channel delivery and personalization capabilities.
+
+PROCESS / APPROACH:
+Not explicitly detailed as a stepwise process on this page; however the approach includes:
+
+- Assessment of content workflow and governance (offered via free CMS performance audit)  
+- SEO and UX audit  
+- Security and compliance gap analysis  
+- Personalized modernization roadmap  
+
+TECHNOLOGIES:
+Platform-Agnostic Expertise including Drupal, WordPress, Magento, Shopify, Contentful, Optimizely; Cloud-Native Foundations on AWS, Azure, GCP; AI-powered personalization technologies; API-first composable modular architecture.
+
+Additional Information:
+
+Case Study Highlight:
+INT.'s AI-Powered CMS Cuts Publishing Time by 42% for Leading Financial Institution
+- Replaced legacy CMS with a secure AI-powered headless platform
+- Boosted publishing speed by 42%
+- Ensured 100% compliance with internal and regulatory audit standards
+(Read more available on site)
+
+Free CMS Performance Audit offered including:
+- Content workflow and governance assessment
+- SEO and UX audit
+- Security and compliance gap analysis
+- Personalized modernization roadmap
+
+Recognition:
+INT. is recognized by multiple awards (images shown but not named explicitly).
+
+Contact:
+Option to schedule meetings or free consultations available on the page.
+
+Summary:
+The page emphasizes INT.'s expertise in delivering fast-to-market, secure, scalable CMS solutions with AI-powered personalization and multi-channel orchestration designed to drive business growth rather than create bottlenecks.
+</result>
+
+extracted_content_3.md:
+<url>
+https://intglobal.com/services/customer-channel-portal/
+</url>
+<query>
+Extract content for the Customer & Channel Portal page. \nENTITY TYPE: \nTOP LEVEL TAB: Services\nLEFT CATEGORY: Customer Experience\nTITLE: \nOVERVIEW: \nCAPABILITIES: \nBUSINESS VALUE: \nTARGET USERS / INDUSTRIES: \nPROCESS / APPROACH: \nTECHNOLOGIES: \nPAGE URL: https://intglobal.com/services/customer-channel-portal/\n\nPreserve paragraphs. Do not rewrite. Do not compress.
+</query>
+<result>
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: Customer Experience  
+TITLE: Customer & Channel Portal  
+
+OVERVIEW:  
+Turn every interaction into loyalty with portals designed to serve, connect, and grow.  
+At Indus Net Technologies (INT.), we build portals that don’t just work but win: cutting support queues, driving transactions, and turning every login into loyalty.  
+- Cut service costs with self-service adoption that sticks  
+- Win partner trust with seamless channel integration  
+- Boost speed-to-market with scalable, modular builds  
+- Fortify with enterprise-grade security & compliance  
+- Track every click to fuel sharper engagement strategies  
+
+A basic portal serves. A modern portal sells, supports, and scales.  
+
+CAPABILITIES:  
+What Experience-Driven Portals Must Deliver Today:  
+- Self-Service Workflows: 80%+ of user queries resolved through automated flows — without human intervention.  
+- Performance at Scale: Fast, mobile-optimized UX with uptime and response times that match enterprise expectations.  
+- Omnichannel Continuity: Consistent experiences across web, mobile, and chat without context-switching.  
+- Observability and Insights: Built-in analytics that surface behavioral trends, funnel leaks, and engagement hotspots.  
+- Security and Compliance: Encryption, MFA, and audit trails embedded from day one to meet regulatory demands.  
+- Full-Lifecycle Automation: Seamless onboarding, support, and feedback loops that reduce friction and costs.  
+- Smart Recommendations: AI-led nudges for product upgrades, renewals, and cross-sells that boost revenue.  
+- Role-Based Dashboards: Personalized interfaces tuned to user type, behavior, and current journey stage.  
+
+Why INT. Builds Portals That Perform at Scale:  
+- Unified Architecture: One system, many personas — customers, partners, and internal teams served via tailored UX.  
+- AI-Powered Personalization: Behavioral analytics and dynamic content targeting baked into every journey.  
+- Modular Engineering: Headless, component-based builds ready for rapid feature rollouts and global scaling.  
+- Plug & Play Integrations: Native connections with CRMs, ERPs, CMS, and payment systems — no custom-code chaos.  
+- Security by Design: DevSecOps practices, VAPT testing, RBAC, and MFA woven into infrastructure.  
+- Real-Time Intelligence: Dashboards and telemetry tools that reveal how users behave — and how to serve them better.  
+- Data & Insights: Built-in dashboards, GA4, Mixpanel, and Hotjar integrations give you real-time feedback to optimize performance.
+
+BUSINESS VALUE:  
+INT. portals aren’t just functional; they’re growth-ready business accelerators that reduce support requests significantly while increasing transparency and adoption of digital tools (e.g., case study of SBI General Insurance showing 62% fewer support requests and 3x rise in claim tracker adoption).  
+
+TARGET USERS / INDUSTRIES: Not explicitly detailed on this page but implied for enterprises needing customer/partner portals across industries such as Banking & Finance, Insurance, Life Sciences, Retail & FMCG.
+
+PROCESS / APPROACH:
+INT.’s approach includes building multilingual offline-ready portals with real-time tracking capabilities; engineering engagement platforms rather than static directories; conducting free portal experience audits including user journey friction audit, personalization readiness score, integration landscape mapping; identifying hidden automation opportunities.
+
+TECHNOLOGIES:
+Mentioned technologies include AI-powered personalization (behavioral analytics), modular headless architecture for rapid feature rollouts; integrations with CRM/ERP/CMS/payment systems; security technologies including encryption, MFA (Multi-Factor Authentication), RBAC (Role-Based Access Control), DevSecOps practices; analytics tools like GA4 (Google Analytics 4), Mixpanel, Hotjar.
+
+PAGE URL:
+https://intglobal.com/services/customer-channel-portal/
+</result>
+
+extracted_content_4.md:
+<url>
+https://intglobal.com/services/customer-relationship-management/
+</url>
+<query>
+Extract content for the Customer Relationship Management (CRM) page. \nENTITY TYPE: \nTOP LEVEL TAB: Services\nLEFT CATEGORY: Customer Experience\nTITLE: \nOVERVIEW: \nCAPABILITIES: \nBUSINESS VALUE: \nTARGET USERS / INDUSTRIES: \nPROCESS / APPROACH: \nTECHNOLOGIES: \nPAGE URL: https://intglobal.com/services/customer-relationship-management/\n\nPreserve paragraphs. Do not rewrite. Do not compress.
+</query>
+<result>
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: Customer Experience  
+TITLE: Customer Relationship Management (CRM)  
+
+OVERVIEW:  
+Your CRM Isn’t a Tool. It’s Your Untapped Growth Engine.  
+CRM isn’t about contacts — it’s about contracts closed. At Indus Net Technologies (INT.), we rewire CRM from being a database into a decision-making, revenue-driving machine: intelligent, automated, and tailored to your business DNA.  
+- 360° customer intelligence that powers loyalty and repeat revenue  
+- Automated workflows that slash manual effort and accelerate sales cycles  
+- AI-driven insights to uncover upsell, cross-sell, and retention opportunities  
+- Industry-specific CRM playbooks customized for your growth model  
+- Real-time dashboards that arm leaders with instant, data-backed clarity  
+
+Every day on a broken CRM is a day lost in revenue, reputation, and retention.  
+
+CAPABILITIES:  
+What Tomorrow’s CRM Demands — Today  
+Forget static data entry systems. Modern CRMs must empower:  
+
+- Enterprise-Grade Security: GDPR, HIPAA, CCPA-compliant, by design  
+- Integrated Sales & Support: One CRM for lead-gen, nurturing, and post-sale care  
+- Automated Workflows: Trigger-based journeys that reduce manual intervention  
+- 360° Customer Intelligence: Unified, real-time interaction and data views  
+- Omnichannel Experience: Seamless customer journeys across channels  
+- Predictive Personalization: AI-driven actions before the customer asks  
+- Instant Insights: Dashboards that drive real-time, contextual decisions  
+- Scalable Infrastructure: From hundreds to millions of customers  
+
+INT. Reimagines CRM as a Growth Platform  
+
+- Platform-Agnostic CRM Expertise: Salesforce, Dynamics, HubSpot, Zoho  
+- Modular & Future-Ready Builds: Cloud-native, API-first, low-code friendly  
+- Security-First Engineering: ISO 27001, SOC2, CMMI certified  
+- Embedded Intelligence: AI, ML, customer health scoring baked-in  
+- Real-Time Business Insights: Dashboards and analytics that inform decisions, not just report them  
+- Speed-to-Value Execution: Measurable ROI in weeks, not years  
+
+BUSINESS VALUE:   
+$8.71 average revenue return for every $1 spent on CRM (Nucleus Research).  
+29% average increase in sales revenue after CRM implementation (Salesforce).  
+
+CASE STUDY EXCERPT:   
+Retail Giant Boosts Loyalty with 25% More Repeat Purchases and 3x Engagement via INT. CRM   
+Results include 28% reduction in turnaround time for sales and support processes and 35% improvement in after-sales service productivity.  
+
+TARGET USERS / INDUSTRIES:   
+Industries served include Banking & Finance, Insurance, Life Sciences, Retail and FMCG.  
+
+PROCESS / APPROACH:   
+INT. doesn’t just implement CRMs; they architect intelligent CRM ecosystems tailored to drive loyalty, revenue growth and responsiveness with modular integrations and embedded AI intelligence.
+
+TECHNOLOGIES:   
+Expertise in Salesforce, Dynamics 365, HubSpot, Zoho; cloud-native architectures; API-first design; low-code platforms; AI/ML embedded solutions; ISO 27001/SOC2/CMMI certified security engineering.
+
+PAGE URL: https://intglobal.com/services/customer-relationship-management/
+</result>
+
+todo.md:
+# Task Progress\n\n- [x] Phase 1: Site Entry (Confirm tabs)\n- [x] Phase 2: Tab Selection (Services)\n- [x] Phase 3: Category Targeting\n- [x] Phase 4: Item Listing\n- [x] Phase 5-7: Extraction Loop\n- [x] Phase 8: Termination

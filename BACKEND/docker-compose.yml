@@ -1,0 +1,11 @@
+services:
+  backend:
+    build: .
+    container_name: int_business_central_backend
+    ports:
+      - "3003:3003"
+    env_file:
+      - .env
+    volumes:
+      - ./VECTOR_DB:/app/VECTOR_DB
+    restart: always

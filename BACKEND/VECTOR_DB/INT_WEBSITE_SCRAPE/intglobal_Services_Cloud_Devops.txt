@@ -1,0 +1,361 @@
+I have successfully completed the extraction for all items in the 'Cloud Services & DevOps' category. 
+
+The following services were processed:
+1. **Intelligent Infrastructure Management (iiM)**: Extracted details including the InsurTech case study (3x scalability, 43% incident response improvement).
+2. **Performance Optimization**: Extracted details including the EZTaxReturn case study (70-80% cost reduction, 3x faster deployments).
+3. **DevOps Excellence**: Extracted details including the Everlink case study (55% faster releases, 61% fewer rollbacks).
+4. **Cloud Consulting & Migration**: Extracted details including the HealthTech case study (22% faster queries, 31% less overhead).
+5. **Cloud Email Solution**: Extracted details including the Logistics Firm case study (99% data integrity, 83% faster IT resolution).
+
+All data has been formatted as business-intelligence facts and saved to the file system.
+
+Attachments:
+
+extracted_content_0.md:
+<url>
+https://intglobal.com/services/intelligent-infrastructure-management/
+</url>
+<query>
+Extract service details for Intelligent Infrastructure Management (iiM) following the exact format: ENTITY TYPE, TOP LEVEL TAB, LEFT CATEGORY, TITLE, PAGE URL, WHAT IT IS, WHAT PROBLEMS IT SOLVES, CORE CAPABILITIES, DELIVERED OUTCOMES, TARGET INDUSTRIES / CLIENT TYPES, PROCESS / DELIVERY MODEL, TECHNOLOGIES & PLATFORMS, NUMBERS & PROOF POINTS. Ensure to include the case study details (InsurTech, 3x scalability, 43% incident response improvement).
+</query>
+<result>
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: Cloud Services & DevOps  
+TITLE: Intelligent Infrastructure Management (iiM)  
+PAGE URL: https://intglobal.com/services/intelligent-infrastructure-management/  
+
+WHAT IT IS:  
+Intelligent Infrastructure Management (iiM) is a service that combines automation, monitoring, and predictive intelligence to create infrastructures that are self-optimizing, resilient, and cost-efficient. It transforms traditional costly, complex, and reactive infrastructure into proactive, scalable, and secure infrastructure that acts as a strategic enabler of growth and innovation.
+
+WHAT PROBLEMS IT SOLVES:  
+- Reduces manual intervention and downtime through automation-first management.  
+- Prevents failures with proactive monitoring and predictive intelligence.  
+- Handles peak loads efficiently with elastic scaling without wasted capacity.  
+- Ensures integrated security and compliance across cloud and hybrid environments.  
+- Provides data-driven insights to optimize performance and costs continuously.  
+- Addresses the need for infrastructure that can self-heal, scale smartly, and keep costs in check.
+
+CORE CAPABILITIES:  
+- Proactive monitoring predicting and preventing failures.  
+- Automation-first management to reduce manual tasks.  
+- Elastic scaling for dynamic resource allocation.  
+- Integrated security & compliance (SOC2, ISO 27001, HIPAA).  
+- Data-driven performance optimization with real-time dashboards (GA4, Mixpanel, Hotjar).  
+- Predictive resilience powered by observability and machine learning.  
+- Unified governance across cloud, on-premises, and hybrid environments.  
+- Continuous security hardening with every patch/update/threat.  
+- Infrastructure-as-Code (IaC) for modular, repeatable deployments with auditability.  
+- 24/7 observability & incident response led by Site Reliability Engineering (SRE).  
+- CI/CD automation including blue-green deployments and rollback safety.  
+- Real-time cloud spend analytics and FinOps optimization.
+
+DELIVERED OUTCOMES:  
+- Improved deliverable quality, agility, and business continuity reported by 99% of organizations using iiM (BayTech Consulting).  
+- 31% improvement in forecasting accuracy enabled by iiM with cloud analytics and automation (SQ Magazine).  
+
+TARGET INDUSTRIES / CLIENT TYPES:  
+Enterprises seeking modern infrastructure solutions that adapt to demand dynamically while ensuring security, compliance, cost efficiency, and operational excellence; includes high-growth InsurTech companies as demonstrated in the case study.
+
+PROCESS / DELIVERY MODEL:  
+Combines automation-first management with continuous monitoring and predictive intelligence; employs SRE-led operations; uses Infrastructure-as-Code for deployment; integrates real-time analytics dashboards; offers continuous hardening of security; supports unified governance across environments.
+
+TECHNOLOGIES & PLATFORMS:  
+Cloud platforms (unspecified), AI/ML for predictive resilience and anomaly detection; Infrastructure-as-Code tools; CI/CD pipelines; monitoring tools integrated with GA4, Mixpanel, Hotjar; compliance frameworks SOC2, ISO 27001, HIPAA.
+
+NUMBERS & PROOF POINTS:  
+- 99% of organizations report improved quality, agility, business continuity using iiM (BayTech Consulting).  
+- 31% improvement in forecasting accuracy via cloud analytics & automation (SQ Magazine).
+
+CASE STUDY DETAILS:   
+Title: InsurTech Achieves 3x Scalability and Hardened Security via INT.’s Infrastructure Management   
+URL to case study PDF: https://intglobal.com/wp-content/uploads/2025/05/Intelligent-Infrastructure-Management-for-a-High-Growth-InsurTech.pdf   
+Outcomes:   
+- 3x increase in API scalability with no latency issues.   
+- 43% improvement in incident response time.
+</result>
+
+extracted_content_1.md:
+<url>
+https://intglobal.com/services/performance-optimization/
+</url>
+<query>
+Extract service details for Performance Optimization following the exact format: ENTITY TYPE, TOP LEVEL TAB, LEFT CATEGORY, TITLE, PAGE URL, WHAT IT IS, WHAT PROBLEMS IT SOLVES, CORE CAPABILITIES, DELIVERED OUTCOMES, TARGET INDUSTRIES / CLIENT TYPES, PROCESS / DELIVERY MODEL, TECHNOLOGIES & PLATFORMS, NUMBERS & PROOF POINTS. Include the EZTaxReturn case study details (70-80% infra cost reduction, 3x faster deployments).
+</query>
+<result>
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: Cloud Services & DevOps  
+TITLE: Performance Optimization  
+PAGE URL: https://intglobal.com/services/cloud-services-devops/performance-optimization (inferred from site structure, exact URL not explicitly given)  
+
+WHAT IT IS:  
+Performance Optimization is about squeezing the most out of your infrastructure — speed, efficiency, and resilience without overspending. INT. fine-tunes workloads, streamlines architectures, and eliminates bottlenecks so your cloud runs at peak performance every day.
+
+WHAT PROBLEMS IT SOLVES:  
+- Reduces waste and cuts costs through workload right-sizing  
+- Improves application response times and user experience via performance tuning  
+- Enhances scalability and reliability with cloud architecture optimization  
+- Provides continuous monitoring with real-time alerts and proactive issue resolution  
+- Implements cost governance frameworks for efficient and predictable spending  
+- Addresses security & compliance alignment, proactive anomaly detection, FinOps governance, DevOps pipeline optimization, full-stack observability, auto-scaling & resilience, and SRE integration  
+
+CORE CAPABILITIES:  
+- Workload right-sizing based on real usage patterns  
+- Application performance tuning for faster response times  
+- Cloud architecture optimization for scalability and reliability  
+- Continuous monitoring with real-time alerts  
+- Cost governance frameworks to control spending  
+- Security & compliance alignment (secure by design, compliant by default)  
+- Proactive anomaly detection to spot performance drifts and cost spikes early  
+- FinOps-led governance to reduce wastage and align spend with ROI  
+- DevOps pipeline optimization to eliminate bottlenecks and boost release velocity  
+- Full-stack observability for early issue detection and resolution  
+- Auto-scaling & resilience to handle surges without over-provisioning  
+- SRE DNA injection including SLIs, chaos testing, alert hygiene with playbooks  
+
+DELIVERED OUTCOMES:  
+- 30% reduction in infrastructure costs reported by enterprises leveraging advanced cloud performance optimization tools (Cyber Defense Magazine)  
+- 31% improvement in business forecasting accuracy enabled by cloud analytics and performance optimization automation (SQ Magazine)  
+
+TARGET INDUSTRIES / CLIENT TYPES: Not explicitly listed for this service; however, INT. serves industries including Banking & Finance, Insurance, Life Sciences, Retail and FMCG.  
+
+PROCESS / DELIVERY MODEL: INT.’s Cloud Performance Disruption Model includes five friction-first disruptors: Misuse Mapping (identifies idle resources etc.), Pipeline Bottleneck Scans (detects DevOps delays), Load Behavior Simulation (stress-tests autoscaling), SRE DNA Injection (implements SLIs etc.), Velocity Decay Monitoring (tracks regressions). This framework exposes, fixes, and future-proofs cloud performance.
+
+TECHNOLOGIES & PLATFORMS: Not explicitly detailed in the content provided.
+
+NUMBERS & PROOF POINTS:  
+- 30% reduction in infrastructure costs reported by enterprises using advanced tools (Cyber Defense Magazine)  
+- 31% improvement in business forecasting accuracy via cloud analytics (SQ Magazine)  
+
+EZTaxReturn Case Study Details:  
+INT. modernized EZTaxReturn’s tax platform to handle peak season traffic with speed, cost-efficiency, and compliance. Outcomes achieved include:   
+- 70–80% reduction in infrastructure costs via dynamic scaling   
+- 3x deployment speed thanks to automated CI/CD  
+
+Additional Note: The exact page URL for Performance Optimization is not explicitly stated but can be inferred from the site structure under Services > Cloud Services & DevOps > Performance Optimization.
+</result>
+
+extracted_content_2.md:
+<url>
+https://intglobal.com/services/devops-excellence/
+</url>
+<query>
+Extract service details for DevOps Excellence following the exact format: ENTITY TYPE, TOP LEVEL TAB, LEFT CATEGORY, TITLE, PAGE URL, WHAT IT IS, WHAT PROBLEMS IT SOLVES, CORE CAPABILITIES, DELIVERED OUTCOMES, TARGET INDUSTRIES / CLIENT TYPES, PROCESS / DELIVERY MODEL, TECHNOLOGIES & PLATFORMS, NUMBERS & PROOF POINTS. Include the Everlink case study details (55% faster release cycles, 61% fewer rollback incidents).
+</query>
+<result>
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: Cloud Services & DevOps  
+TITLE: DevOps Excellence  
+PAGE URL: https://intglobal.com/services/cloud-services-devops/devops-excellence (inferred from site structure, exact URL not explicitly given)  
+
+WHAT IT IS:  
+DevOps Excellence is an operating model for high-performing digital businesses that embeds DevOps practices to break silos, automate delivery, and ensure seamless software movement from idea to production. It focuses on culture, speed, reliability, precision, protection, and scalability under pressure.
+
+WHAT PROBLEMS IT SOLVES:  
+- Bottlenecks in software delivery and deployment  
+- Silos between development, QA, and operations teams  
+- Inconsistent and unscalable infrastructure management  
+- Deployment friction and Mean Time To Recovery (MTTR) delays  
+- Security and compliance automation gaps  
+- Lack of standardized pipeline governance and self-service environments for developers  
+
+CORE CAPABILITIES:  
+- Automated CI/CD pipelines for rapid, reliable deployments  
+- Collaboration frameworks aligning dev, QA, and ops into one team  
+- Infrastructure as Code (IaC) using Terraform, Kubernetes, Ansible for consistency and scalability  
+- Continuous testing & monitoring to catch issues before impacting users  
+- Metrics-driven optimization to improve release speed and system stability  
+- Velocity Mapping to diagnose and eliminate time sinks in release flow  
+- Pipeline Resilience Engineering with alerting, rollback, auto-heal features  
+- Embedded DevSecOps with OWASP standards, SAST/DAST scanning, policy-as-code from Day 1  
+- SRE-led monitoring & governance using SLOs, runbooks, Grafana, Prometheus  
+- FinOps & cost visibility to track and optimize spend without sacrificing performance  
+
+DELIVERED OUTCOMES:  
+- 30% reduction in development and operational costs on average by teams implementing mature DevOps practices (RadixWeb)  
+- 48% faster software development cycles reported by organizations with advanced DevOps practices (Spacelift)  
+
+TARGET INDUSTRIES / CLIENT TYPES: Not explicitly listed; implied broad applicability across digital businesses needing DevOps transformation.  
+
+PROCESS / DELIVERY MODEL: Strategic overhaul of software build, ship, secure processes at scale; includes discovery sessions, maturity scorecards, personalized roadmaps; emphasizes collaboration frameworks and embedded security.  
+
+TECHNOLOGIES & PLATFORMS: Terraform, Kubernetes, Ansible (IaC tools); Grafana and Prometheus (monitoring); OWASP standards; SAST/DAST tools; CI/CD automation tools (not specifically named).  
+
+NUMBERS & PROOF POINTS:  
+Case Study - Everlink: INT. built a DevOps Center of Excellence (CoE) for Everlink resulting in:  
+- 55% faster release cycles reducing time to production  
+- 61% fewer rollback incidents enabled by testing and automation  
+
+Additional statistics cited include average 30% cost reduction and 48% faster development cycles from industry sources.
+
+---
+
+Summary of Everlink Case Study Details:  
+INT. built a DevOps CoE for Everlink that streamlined deployment pipelines and enforced policy-driven infrastructure governance resulting in 55% faster release cycles and 61% fewer rollback incidents.
+
+---
+
+Note: Exact page URL for "DevOps Excellence" service is not explicitly provided in the content but is inferred under the "Cloud Services & DevOps" category on the website https://intglobal.com.
+</result>
+
+extracted_content_3.md:
+<url>
+https://intglobal.com/services/cloud-consulting-migration-webpage-content/
+</url>
+<query>
+Extract service details for Cloud Consulting & Migration following the exact format: ENTITY TYPE, TOP LEVEL TAB, LEFT CATEGORY, TITLE, PAGE URL, WHAT IT IS, WHAT PROBLEMS IT SOLVES, CORE CAPABILITIES, DELIVERED OUTCOMES, TARGET INDUSTRIES / CLIENT TYPES, PROCESS / DELIVERY MODEL, TECHNOLOGIES & PLATFORMS, NUMBERS & PROOF POINTS. Include the HealthTech case study details (22% faster query performance, 31% reduction in operational overhead).
+</query>
+<result>
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: Cloud Services & DevOps  
+TITLE: Cloud Consulting & Migration  
+PAGE URL: https://intglobal.com/services/cloud-consulting-migration-webpage-content/  
+
+WHAT IT IS:  
+Cloud Consulting & Migration is a strategic service guiding organizations through every stage of cloud adoption, from assessment and strategy to seamless migration. It focuses on building a foundation for growth, agility, and innovation rather than just moving workloads.
+
+WHAT PROBLEMS IT SOLVES:  
+- Avoids risks of lift-and-shift migrations by future-proofing cloud adoption.  
+- Minimizes downtime and disruption during migration.  
+- Ensures secure migration frameworks to safeguard data and compliance.  
+- Addresses challenges of multi-cloud and hybrid cloud strategies for flexibility and scale.  
+- Provides post-migration optimization for cost, performance, and reliability.  
+
+CORE CAPABILITIES:  
+- Cloud readiness assessments aligned with business goals.  
+- Tailored migration roadmaps.  
+- Multi-cloud and hybrid cloud strategies (AWS, Azure, GCP).  
+- Secure migration with end-to-end encryption, IAM policies, VPC configurations, audit trails.  
+- Zero-downtime migration using automation, real-time sync, rollback capabilities.  
+- Post-migration monitoring with real-time dashboards and alerts.  
+- Compliance-ready setups aligned with ISO, GDPR, HIPAA, IRDAI mandates.  
+
+DELIVERED OUTCOMES:  
+- Faster, safer, smarter business operations on the cloud.  
+- Cost control and workload tuning post-migration.  
+- Security and compliance embedded throughout the migration lifecycle.
+
+TARGET INDUSTRIES / CLIENT TYPES:  
+Industries served include Banking & Finance, Insurance, Life Sciences (including HealthTech), Retail and FMCG.
+
+PROCESS / DELIVERY MODEL:  
+Structured methodology consisting of Discovery ➝ Planning ➝ Migration ➝ Optimization executed with zero guesswork; includes post-migration support.
+
+TECHNOLOGIES & PLATFORMS:  
+Expertise in Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP) with certified architects; multi-cloud deployments; container services; serverless frameworks; CI/CD pipelines.
+
+NUMBERS & PROOF POINTS:  
+- 0% of cloud-driven companies report higher revenue growth than industry peers (source SQ Magazine).  
+- 0% of CFOs confirm cloud investments deliver ROI within 12–18 months (source SQ Magazine).  
+
+HealthTech Case Study Details:  
+- Achieved 22% faster query performance boosting analytics efficiency.  
+- Delivered 31% reduction in operational overhead driven by automation.  
+
+Case Study URL: https://intglobal.com/success-stories/  
+
+Summary of HealthTech Case Study: INT executed a secure, zero-downtime hybrid cloud migration for a HealthTech firm resulting in significant performance improvements and operational cost reductions.
+</result>
+
+extracted_content_4.md:
+<url>
+https://intglobal.com/services/cloud-email-solutions/
+</url>
+<query>
+Extract service details for Cloud Email Solution following the exact format: ENTITY TYPE, TOP LEVEL TAB, LEFT CATEGORY, TITLE, PAGE URL, WHAT IT IS, WHAT PROBLEMS IT SOLVES, CORE CAPABILITIES, DELIVERED OUTCOMES, TARGET INDUSTRIES / CLIENT TYPES, PROCESS / DELIVERY MODEL, TECHNOLOGIES & PLATFORMS, NUMBERS & PROOF POINTS. Include the Logistics Firm case study details (99% data integrity, 83% faster IT helpdesk resolution).
+</query>
+<result>
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: Cloud Services & DevOps  
+TITLE: Cloud Email Solution  
+PAGE URL: https://intglobal.com/services/cloud-services-devops/cloud-email-solution (inferred from site structure, exact URL not explicitly provided)  
+
+WHAT IT IS:  
+Cloud Email Solution is a secure, scalable cloud email service designed to keep teams connected, productive, and protected anywhere. It delivers enterprise-grade security with encryption, threat protection, and compliance controls; seamless migration from legacy email systems with zero data loss; anywhere access across devices with built-in redundancy and uptime SLAs; collaboration-ready platforms integrated with calendars, tasks, and productivity suites; and scalable infrastructure to support growing teams without added complexity.
+
+WHAT PROBLEMS IT SOLVES:  
+- Outdated email systems that slow teams and invite security risks.  
+- Data loss during migration from legacy systems.  
+- Lack of seamless multi-device access and collaboration tools.  
+- Security threats including malware via email (94% of malware incidents come through emails).  
+- Compliance challenges with policy enforcement and archiving.  
+
+CORE CAPABILITIES:  
+- Zero-downtime migration of inboxes, contacts, and calendars without disruption or data loss.  
+- Multi-device synchronization and mobile access enterprise-wide.  
+- Admin dashboards and audit logs for full control and visibility into user activity.  
+- Integrated productivity tools connecting email to documents, calendars, video calls, and task managers.  
+- Policy-based security enforcing DLP, retention, and archiving rules.  
+- SPF, DKIM, and DMARC compliance for improved deliverability and spoofing prevention.  
+
+DELIVERED OUTCOMES:  
+- Secure, seamless collaboration at scale.  
+- Enhanced policy enforcement with zero downtime during migration.  
+
+TARGET INDUSTRIES / CLIENT TYPES:  
+Cross-industry including BFSI (Banking, Financial Services & Insurance), Healthcare, SaaS, Retail, SMBs, mid-market firms.
+
+PROCESS / DELIVERY MODEL:  
+- Expertise across platforms including Google Workspace, Microsoft 365 Email (Exchange Online), Zoho Mail & Workplace with certified tools and trained experts ensuring secure mailbox migration.  
+- Smart batch planning organizing migration in waves to minimize downtime and user disruption.  
+- Secure setup including SPF, DKIM, MFA to protect domains and users.  
+- Training provided for admins and users post-migration for smooth adoption.
+
+TECHNOLOGIES & PLATFORMS:  
+- Google Workspace (Gmail)  
+- Microsoft 365 Exchange Online  
+- Zoho Mail & Workplace   
+Includes integration with Google Vault, Calendar, Drive, Meet; Outlook setup; Zoho CRM and apps; SPF/DKIM/DMARC DNS records; multi-factor authentication.
+
+NUMBERS & PROOF POINTS:  
+- 94% of malware incidents come through emails (LLCBuddy).   
+- $12.7 billion projected cloud email market size by 2033 (MarkWide Research).   
+Case Study - Logistics Firm:   
+- Migrated 1,200 mailboxes from legacy cPanel to Microsoft 365 with enhanced policy enforcement and zero downtime.   
+- Achieved 99% data integrity across mail, calendar, and contacts.   
+- Delivered 83% faster IT helpdesk resolution for email-related issues.
+
+Additional Notes: The case study is titled "99% Data Integrity & 83% Faster IT Resolution: INT. Microsoft 365 Migration for Logistics Firm." The service emphasizes measurable UX outcomes beyond just technical delivery.
+
+# Summary of extracted details:
+
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: Cloud Services & DevOps  
+TITLE: Cloud Email Solution  
+PAGE URL: Not explicitly provided; inferred under Services > Cloud Services & DevOps > Cloud Email Solution on intglobal.com  
+
+WHAT IT IS:
+Secure scalable cloud email solution enabling connected productive communication anywhere with enterprise-grade security.
+
+WHAT PROBLEMS IT SOLVES:
+Outdated slow email systems; risk of data loss in migration; lack of multi-device sync; security threats via email; compliance enforcement challenges.
+
+CORE CAPABILITIES:
+Zero-downtime migration; multi-device sync & mobile access; admin dashboards & audit logs; integrated productivity tools; policy-based security enforcement; SPF/DKIM/DMARC compliance.
+
+DELIVERED OUTCOMES:
+Secure seamless collaboration at scale; zero downtime migrations with enhanced policy enforcement.
+
+TARGET INDUSTRIES / CLIENT TYPES:
+BFSI, Healthcare, SaaS, Retail sectors plus SMBs/mid-market firms.
+
+PROCESS / DELIVERY MODEL:
+Certified expert-led migrations across Google Workspace/Microsoft 365/Zoho platforms using smart batch planning minimizing downtime plus training for admins/users.
+
+TECHNOLOGIES & PLATFORMS:
+Google Workspace (Gmail), Microsoft 365 Exchange Online, Zoho Mail & Workplace integrations including Vault/Calendar/Drive/Outlook/Zoho CRM/SPF/DKIM/DMARC/MFA.
+
+NUMBERS & PROOF POINTS:
+94% malware via email (LLCBuddy); $12.7B market by 2033 (MarkWide); Case Study - Logistics firm migrated 1,200 mailboxes cPanel to M365 with 99% data integrity & 83% faster IT helpdesk resolution.
+
+Case Study Details:
+Title: "99% Data Integrity & 83% Faster IT Resolution: INT. Microsoft 365 Migration for Logistics Firm"  
+Details: Migrated 1,200 mailboxes from legacy cPanel to Microsoft 365 with enhanced policy enforcement and zero downtime achieving 99% data integrity across mail/calendar/contacts and enabling an 83% faster IT helpdesk resolution for email issues.
+
+This completes the extraction as per the requested format using only the information available in the webpage content provided.
+</result>

@@ -1,0 +1,406 @@
+I have completed the extraction for the 'AI and Analytics' category under 'Services'. All 6 items (Data Lake & Business Intelligence, Gen AI and Agentic AI, AI Chatbots, AI Models, Advanced Analytics, and Computer Vision AI) have been processed. The extracted business intelligence facts for each item are saved in individual markdown files (extracted_content_0.md to extracted_content_5.md) following the required format.
+
+Attachments:
+
+extracted_content_0.md:
+<url>
+https://intglobal.com/services/data-lake-business-intelligence/
+</url>
+<query>
+Extract business intelligence facts for 'Data Lake & Business Intelligence' following the specified format: ENTITY TYPE, TOP LEVEL TAB, LEFT CATEGORY, TITLE, PAGE URL, WHAT IT IS, WHAT PROBLEMS IT SOLVES, CORE CAPABILITIES, DELIVERED OUTCOMES, TARGET INDUSTRIES / CLIENT TYPES, PROCESS / DELIVERY MODEL, TECHNOLOGIES & PLATFORMS, NUMBERS & PROOF POINTS. Use the data from the current page: https://intglobal.com/services/data-lake-business-intelligence/
+</query>
+<result>
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: Application Development  
+TITLE: Data Lake & Business Intelligence  
+PAGE URL: https://intglobal.com/services/data-lake-business-intelligence/  
+
+WHAT IT IS:  
+Data Lake & Business Intelligence (BI) service by INT. helps organizations consolidate scattered data into scalable lakes and transform it into actionable intelligence with BI that leaders can trust. It includes centralized data lakes unifying siloed sources, real-time BI dashboards tailored for executives and frontline teams, self-service analytics, data governance and security frameworks, and scalable architectures ready for advanced AI and predictive analytics.
+
+WHAT PROBLEMS IT SOLVES:  
+- Consolidates siloed data sources into a single trusted foundation to reduce complexity and costs.  
+- Enables faster, smarter decision-making with real-time dashboards and self-service analytics.  
+- Ensures compliance and trust through governance and security frameworks (SOC2, HIPAA, GDPR).  
+- Supports future-proof architecture for AI and predictive analytics readiness.  
+- Provides role-based BI views for different organizational roles to enhance relevance and usability.  
+
+CORE CAPABILITIES:  
+- Scalable cloud backbone using Azure, AWS, GCP with autoscaling and resilience.  
+- Unified data lakes integrating ERP, CRM, apps, and cloud data into one clean source of truth.  
+- Real-time dashboards delivering live data for immediate insights.  
+- Role-based BI dashboards customized for finance, operations, CXOs, etc.  
+- Compliance-first design incorporating SOC2, HIPAA, GDPR standards.  
+- Governed access with RBAC (Role-Based Access Control), audit trails, version control.  
+- Self-service interfaces enabling non-technical users to create and use dashboards without analysts.  
+- Operational data engines powering every business decision beyond visualization.  
+- Live data pipelines from Kafka, Spark, APIs feeding actionable dashboards.  
+- Automation-ready architecture supporting ETL to anomaly detection at scale.  
+- Plug & perform integrations with SAP, Salesforce, Stripe etc., ensuring fast synchronization.  
+- Focus on actionable KPIs rather than vanity metrics to guide corrective actions.
+
+DELIVERED OUTCOMES:  
+- 24.6% average reduction in data management costs by consolidating siloed information (Coherent Market Insights).  
+- 27% average revenue increase reported by businesses using BI to optimize operations and enhance customer engagement (BARC Research).  
+- Case study example: Biocon achieved 55% reduction in operational costs and 28% faster reporting using INT.’s Data Lake & BI platform.
+
+TARGET INDUSTRIES / CLIENT TYPES:  
+- Banking & Finance  
+- Insurance  
+- Life Sciences (including R&D and manufacturing units)  
+- Retail and FMCG  
+
+PROCESS / DELIVERY MODEL:  
+- Starts with a free BI Jumpstart Pack including audit of current dashboards/data flows, custom dashboard using client KPIs, punch list of impactful improvements delivered in 5 days with zero obligation.  
+
+TECHNOLOGIES & PLATFORMS:  
+- Cloud platforms: Azure, AWS, Google Cloud Platform (GCP) with autoscaling capabilities.  
+- Data pipeline technologies: Kafka, Spark APIs for live data streaming.   
+- Integration platforms supporting SAP, Salesforce, Stripe etc.
+
+NUMBERS & PROOF POINTS:  
+- 24.6% average reduction in data management costs by consolidating siloed information into centralized data lakes (Coherent Market Insights).   
+- 27% average revenue increase reported by businesses using BI to optimize operations and enhance customer engagement (BARC Research).   
+- Biocon case study results: 55% reduction in operational costs; 28% faster reporting.
+
+Summary URL reference: https://intglobal.com/services/data-lake-business-intelligence/
+</result>
+
+extracted_content_1.md:
+<url>
+https://intglobal.com/services/gen-ai-and-agentic-ai/
+</url>
+<query>
+Extract business intelligence facts for 'Gen AI and Agentic AI' following the specified format: ENTITY TYPE, TOP LEVEL TAB, LEFT CATEGORY, TITLE, PAGE URL, WHAT IT IS, WHAT PROBLEMS IT SOLVES, CORE CAPABILITIES, DELIVERED OUTCOMES, TARGET INDUSTRIES / CLIENT TYPES, PROCESS / DELIVERY MODEL, TECHNOLOGIES & PLATFORMS, NUMBERS & PROOF POINTS. Use the data from the current page: https://intglobal.com/services/gen-ai-and-agentic-ai/
+</query>
+<result>
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: AI and Analytics  
+TITLE: Gen AI and Agentic AI  
+PAGE URL: https://intglobal.com/services/gen-ai-and-agentic-ai/  
+
+WHAT IT IS:  
+Generative AI accelerates creativity and insight, while Agentic AI transforms AI from a static responder into an autonomous actor that executes workflows end-to-end. INT. turns AI into a force multiplier for growth, efficiency, and scale by creating at scale with AI-driven content, code, and knowledge generation; acting autonomously through AI agents; integrating seamlessly across business systems; continuously improving with self-learning models; and building on trust with secure, ethical, and compliant AI frameworks.
+
+WHAT PROBLEMS IT SOLVES:  
+- Enables businesses to create faster, act smarter, and scale harder with next-generation AI.  
+- Reduces operational costs through workflow automation and process optimization.  
+- Provides enterprise-grade integration with CRM, ERP, and CX stacks.  
+- Ensures compliance with SOC2, HIPAA, GDPR regulations.  
+- Delivers real-time execution of insights and actions.  
+
+CORE CAPABILITIES:  
+- Enterprise Integration (CRM, ERP, CX stack connectivity)  
+- Continuous Self-Learning models that retrain as data evolves  
+- Multi-Modal Intelligence (text, voice, code, documents understood natively)  
+- Autonomous Agents (digital coworkers who think and do)  
+- Composable, Cloud-Agnostic Builds (run anywhere, scale everywhere)  
+- Compliance by Design (SOC2, HIPAA, GDPR-ready)  
+- Human-in-the-loop / Human-on-the-loop workflows with override options  
+- Real-Time Execution of insights plus action in seconds  
+
+DELIVERED OUTCOMES:  
+- 83% of business leaders believe generative AI will drive the largest digital transformation of the decade.  
+- 22% reduction in operational costs reported by retailers using agentic AI for workflow automation.  
+- Case study example: Contact Center boosted SLA by 40% and cut breaches by 81% using INT.’s Agentic QA solution.  
+- Implemented LLM-powered GenAI solution for BFSI client achieving 7x faster content velocity across digital campaigns and 60% reduction in spend on external content services.
+
+TARGET INDUSTRIES / CLIENT TYPES:  
+- Banking & Finance  
+- Insurance  
+- Life Sciences  
+- Retail and FMCG  
+
+PROCESS / DELIVERY MODEL: INT.’s Agentic Intelligence Stack™ includes:  
+- Strategy & Readiness workshops, assessments, opportunity mapping aligned to enterprise goals.   
+- LLM Tuning (fine-tuning foundation models like GPT, LLaMA, Falcon to proprietary data).   
+- Agentic AI Deployment using LangChain, Open Agents, custom orchestration stacks.   
+- Systems Integration via REST, GraphQL, event-driven connections to CRMs/ERPs/data lakes.   
+- Guardrails & Compliance including explainability, audit logs, observability baked into launch blueprints.   
+- Post-launch Optimization using MLflow, Prometheus, Grafana dashboards and feedback loops for continuous tuning.
+
+TECHNOLOGIES & PLATFORMS:   
+- Foundation Models: GPT, LLaMA, Falcon   
+- Agent Frameworks: LangChain, Open Agents   
+- Integration Technologies: REST APIs, GraphQL APIs   
+- Monitoring & Optimization Tools: MLflow, Prometheus, Grafana   
+
+NUMBERS & PROOF POINTS:   
+- 83% of business leaders see generative AI as key to digital transformation (Mission Cloud).   
+- 22% operational cost reduction in retail via agentic AI agents (Experro).   
+- Contact Center SLA improved by 40%, breaches cut by 81% with INT.’s Agentic QA solution.   
+- BFSI client achieved 7x faster content velocity and 60% cost reduction on external content services through INT.’s GenAI solution.
+
+This information is extracted solely from the page https://intglobal.com/services/gen-ai-and-agentic-ai/.
+</result>
+
+extracted_content_2.md:
+<url>
+https://intglobal.com/services/ai-chatbots/
+</url>
+<query>
+Extract business intelligence facts for 'AI Chatbots' following the specified format: ENTITY TYPE, TOP LEVEL TAB, LEFT CATEGORY, TITLE, PAGE URL, WHAT IT IS, WHAT PROBLEMS IT SOLVES, CORE CAPABILITIES, DELIVERED OUTCOMES, TARGET INDUSTRIES / CLIENT TYPES, PROCESS / DELIVERY MODEL, TECHNOLOGIES & PLATFORMS, NUMBERS & PROOF POINTS. Use the data from the current page: https://intglobal.com/services/ai-chatbots/
+</query>
+<result>
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: AI and Analytics  
+TITLE: AI Chatbots  
+PAGE URL: https://intglobal.com/services/ai-chatbots/  
+
+WHAT IT IS:  
+AI chatbots are intelligent conversational agents that automate, assist, and accelerate customer interactions 24/7. They go beyond simple Q&A to serve more customers with less effort by automating, personalizing, and converting interactions seamlessly integrated into business systems.
+
+WHAT PROBLEMS IT SOLVES:  
+- Reduces support load by resolving queries instantly with always-on assistance.  
+- Enhances customer experience with conversational AI that feels human, learns context, and adapts in real time.  
+- Enables engagement of global audiences through multilingual capabilities.  
+- Provides data-driven insights from interactions to refine service and sales strategies.  
+
+CORE CAPABILITIES:  
+- Built-in analytics dashboards for CSAT, resolution time, deflection rate, and drop-off.  
+- Human-like understanding with context-aware, sentiment-sensitive natural language processing (NLP).  
+- End-to-end workflow automation across CRMs, ERPs, and helpdesk platforms.  
+- Omnichannel coverage including WhatsApp, web, apps, voice, email, social media.  
+- Secure and compliant infrastructure (GDPR, ISO27001, SOC2).  
+- Intelligent personalization using real-time customer data to tailor responses.  
+- Live agent escalation with smart handoff preserving full history and avoiding repetition.  
+- Self-learning loops via NLP logs, feedback capture, and weekly optimization.  
+
+DELIVERED OUTCOMES:  
+- 30% reduction in average handling time boosting operational efficiency (Forrester Research).  
+- 0% of consumers worldwide used chatbots for customer support in the past year leading to faster responses and higher satisfaction (Desk365). [Note: The "0%" figure appears as given but likely a formatting issue; the source is Desk365.]  
+- Case study example: Retailer automated 63% of customer service queries and cut ticket costs by 42% during high traffic events using INT.'s conversational AI chatbot.
+
+TARGET INDUSTRIES / CLIENT TYPES:  
+- Banking & Finance  
+- Insurance  
+- Life Sciences  
+- Retail and FMCG  
+
+PROCESS / DELIVERY MODEL:  
+INT. architects conversational engines combining LLM power with enterprise-grade engineering through the following steps:  
+1. Strategy & Use Case Discovery - identifying high-impact CX and EX journeys for automation.  
+2. GenAI + Domain Tuning - fine-tuned GPT-class models customized to client tone, brand, workflows.  
+3. Conversational UX Design - human-like flows handling sentiment, fallbacks, escalation logic.  
+4. Integration & Intelligence - APIs for Salesforce, SAP, HubSpot, Zendesk, legacy systems integration.  
+5. Observability & Optimization - dashboards using Prometheus, Grafana, Power BI with retraining built-in.  
+6. Security & Compliance - enterprise-ready features including SSO, audit logs, end-to-end encryption.
+
+TECHNOLOGIES & PLATFORMS:   
+- Large Language Models (LLM), GPT-class models tuned for domain-specific use cases.   
+- Integration APIs for Salesforce CRM, SAP ERP systems, HubSpot marketing platform, Zendesk helpdesk software.   
+- Monitoring and analytics tools such as Prometheus, Grafana dashboards; Power BI for business intelligence reporting.   
+- Security standards compliance including GDPR regulations, ISO27001 certification standards, SOC2 compliance.
+
+NUMBERS & PROOF POINTS:   
+- 30% reduction in average handling time reported by companies deploying AI chatbots (Forrester Research).   
+- Global consumer adoption of chatbots for support leading to faster responses and higher satisfaction (Desk365).   
+- Retail client case study showing 63% automation of Tier-1 support queries and 42% reduction in support costs during peak events using INT.'s AI chatbot solution.
+
+Summary URL reference: https://intglobal.com/services/ai-chatbots/
+</result>
+
+extracted_content_3.md:
+<url>
+https://intglobal.com/services/ai-model/
+</url>
+<query>
+Extract business intelligence facts for 'AI Models' following the specified format: ENTITY TYPE, TOP LEVEL TAB, LEFT CATEGORY, TITLE, PAGE URL, WHAT IT IS, WHAT PROBLEMS IT SOLVES, CORE CAPABILITIES, DELIVERED OUTCOMES, TARGET INDUSTRIES / CLIENT TYPES, PROCESS / DELIVERY MODEL, TECHNOLOGIES & PLATFORMS, NUMBERS & PROOF POINTS. Use the data from the current page: https://intglobal.com/services/ai-model/
+</query>
+<result>
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: AI and Analytics  
+TITLE: AI Model  
+PAGE URL: https://intglobal.com/services/ai-model/  
+
+WHAT IT IS:  
+Custom AI models designed, trained, and deployed around client data, industry, and growth goals. These models serve as intelligence engines powering modern business decisions rather than off-the-shelf add-ons.
+
+WHAT PROBLEMS IT SOLVES:  
+- Enables rapid decision-making with predictive intelligence for forecasting demand, trends, and risks.  
+- Enhances smarter search, support, and automation through natural language models.  
+- Improves quality checks, monitoring, and compliance using computer vision and machine learning.  
+- Provides continuous learning models that improve accuracy and efficiency over time.  
+- Helps businesses compete smarter and grow faster by turning data into actionable insights.
+
+CORE CAPABILITIES:  
+- Custom-built models tailored to specific industries and use cases.  
+- Predictive intelligence for demand forecasting and risk assessment.  
+- Natural language processing for enhanced search and automation.  
+- Computer vision and machine learning for operational quality control.  
+- Continuous learning for model improvement.  
+- Rapid pilot to production deployment (under 8 weeks).  
+- Context-aware training using structured and unstructured data.  
+- Real-time execution enabling decisions while customers are engaged.  
+- Plug-and-play integration with CRM, ERP, cloud systems.  
+- Scalable hybrid-cloud infrastructure with auto-scaling and security features.  
+- AI governance including explainability, audit trails, fairness protocols.  
+- Observability via dashboards tracking model drift, ROI, usage metrics.  
+- Human-in-the-loop oversight with autonomy when appropriate.
+
+DELIVERED OUTCOMES:  
+- Faster time-to-value from pilot to production in under 8 weeks.  
+- Real-time actionable decisions improving customer engagement.  
+- Increased conversion rates (example case: 31% increase in conversions).  
+- Achieved 3x ROI within 90 days through hyper-targeted outreach campaigns.
+
+TARGET INDUSTRIES / CLIENT TYPES:  
+- Banking & Finance  
+- Insurance  
+- Life Sciences  
+- Retail and FMCG  
+
+PROCESS / DELIVERY MODEL:   
+1. Discovery + Use Case Mapping to identify high-impact opportunities aligned with business goals.   
+2. Custom Model Development tailored to client context (customer behavior to sensor data).   
+3. Deployment of Real-Time AI Agents that trigger actions beyond predictions.   
+4. Seamless Integrations with existing enterprise systems (CRM, ERP, IoT, Data Lakes).   
+5. MLOps & Governance including CI/CD pipelines, versioning, explainability, audit trails.   
+6. Post-Go-Live Optimization with drift detection, feedback loops, ROI monitoring.
+
+TECHNOLOGIES & PLATFORMS:   
+Hybrid-cloud infrastructure supporting auto-scaling; integration capabilities with CRM, ERP systems; MLOps tools enabling CI/CD pipelines; dashboards for observability; AI governance frameworks ensuring fairness and explainability.
+
+NUMBERS & PROOF POINTS:   
+- 78% of companies globally use AI in at least one business function (McKinsey).   
+- 63% of companies list AI as a top business priority (Exploding Topics).   
+- Retail client case study showed a 31% increase in conversion rates from personalized campaigns using INT.’s behavioral ML model for real-time customer segmentation linked to CRM campaigns.   
+- Achieved 3x ROI in just 90 days through hyper-targeted outreach.
+
+Additional info: INT.’s AI Models are positioned as enterprise-grade solutions emphasizing speed (pilot to production <8 weeks), context-aware training on diverse data types, real-time decision-making capabilities, scalable secure infrastructure, governance protocols for trustworthiness, observability dashboards for performance tracking, and human oversight mechanisms.
+
+This information is extracted entirely from the provided webpage content at https://intglobal.com/services/ai-model/.
+</result>
+
+extracted_content_4.md:
+<url>
+https://intglobal.com/services/advanced-analytics/
+</url>
+<query>
+Extract business intelligence facts for 'Advanced Analytics' following the specified format: ENTITY TYPE, TOP LEVEL TAB, LEFT CATEGORY, TITLE, PAGE URL, WHAT IT IS, WHAT PROBLEMS IT SOLVES, CORE CAPABILITIES, DELIVERED OUTCOMES, TARGET INDUSTRIES / CLIENT TYPES, PROCESS / DELIVERY MODEL, TECHNOLOGIES & PLATFORMS, NUMBERS & PROOF POINTS. Use the data from the current page: https://intglobal.com/services/advanced-analytics/
+</query>
+<result>
+ENTITY TYPE: Business Intelligence Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: AI and Analytics  
+TITLE: Advanced Analytics  
+PAGE URL: https://intglobal.com/services/advanced-analytics/  
+
+WHAT IT IS:  
+Advanced Analytics is a service that helps businesses move from hindsight to foresight by uncovering trends, risks, and opportunities before they surface through predictive analytics, prescriptive insights, machine learning models tailored to industry needs, scenario simulations, and real-time analytics pipelines. It is positioned as an unfair advantage in staying ahead of change rather than just reporting.
+
+WHAT PROBLEMS IT SOLVES:  
+- Anticipates customer behavior and market shifts  
+- Recommends best actions for growth  
+- Enables smarter strategy and risk management through scenario simulations  
+- Provides decisions at the speed of business with real-time analytics pipelines  
+- Ensures compliance with GDPR, ISO 27001, SOC2  
+- Unifies cross-system data from CRM to ERP into one intelligent view  
+- Detects fraud and risk early with alerts  
+- Automates decision systems beyond just informing  
+
+CORE CAPABILITIES:  
+- Real-Time Intelligence: Live dashboards triggering action, streaming insights from multiple platforms (CRM, ERP, web, IoT) into actionable dashboards.  
+- Predictive Analytics: Models forecasting churn, demand, downtime based on business KPIs.  
+- Prescriptive Engines: AI-backed "next best action" recommendations.  
+- Data Unification: Merging siloed data from legacy, cloud, third-party systems into a single source of truth.  
+- Cognitive Systems: Adaptive models that learn and optimize continuously.  
+- Security & Compliance Frameworks: Secure, auditable, compliant data pipelines from day one.  
+- Business-First Dashboards: Visual insights designed for decision-makers rather than data scientists.
+
+DELIVERED OUTCOMES:  
+- 27% average increase in revenue reported by businesses using advanced analytics to optimize operations and customer engagement (BARC Research)  
+- 74% of companies state analytics and intelligence software significantly improve decision-making across departments (Kanerika)  
+- Case study example: A leading bank reduced fraud cases by 73% and improved anomaly detection 4x using INT.’s AI-Powered Analytics. Another bank achieved 75% reduction in fraud incidents and 35% faster fraud resolution time deploying INT.'s real-time fraud analytics engine.
+
+TARGET INDUSTRIES / CLIENT TYPES:  
+- Banking & Finance (secure, smart financial solutions)  
+- Insurance (technology-driven efficiency)  
+- Life Sciences (data-driven speed & precision)  
+- Retail and FMCG (smarter insights for growth and loyalty)
+
+PROCESS / DELIVERY MODEL: Not explicitly detailed on the page.
+
+TECHNOLOGIES & PLATFORMS:   
+While specific technologies are not listed explicitly for Advanced Analytics on this page, the service integrates with multiple platforms including CRM, ERP systems, cloud infrastructure with scalable cloud infrastructure mentioned as part of the offering. It also uses AI/ML models and real-time data streaming technologies.
+
+NUMBERS & PROOF POINTS:   
+- 27% average revenue increase (BARC Research) from advanced analytics use.   
+- 74% companies report improved decision-making due to analytics software (Kanerika).   
+- Leading bank case study with 73% fraud reduction and 4x anomaly detection improvement.   
+- Another bank case study with 75% reduction in fraud incidents and 35% faster resolution time.
+
+Summary URL for reference: https://intglobal.com/services/advanced-analytics/
+</result>
+
+extracted_content_5.md:
+<url>
+https://intglobal.com/services/computer-vision-ai/
+</url>
+<query>
+Extract business intelligence facts for 'Computer Vision AI' following the specified format: ENTITY TYPE, TOP LEVEL TAB, LEFT CATEGORY, TITLE, PAGE URL, WHAT IT IS, WHAT PROBLEMS IT SOLVES, CORE CAPABILITIES, DELIVERED OUTCOMES, TARGET INDUSTRIES / CLIENT TYPES, PROCESS / DELIVERY MODEL, TECHNOLOGIES & PLATFORMS, NUMBERS & PROOF POINTS. Use the data from the current page: https://intglobal.com/services/computer-vision-ai/
+</query>
+<result>
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: AI and Analytics  
+TITLE: Computer Vision AI  
+PAGE URL: https://intglobal.com/services/computer-vision-ai/  
+
+WHAT IT IS:  
+Computer Vision AI at INT. combines computer vision, artificial intelligence, and real-time decision intelligence to transform physical environments into intelligent, responsive systems that provide real-time visibility into people, assets, movement, and operational conditions.
+
+WHAT PROBLEMS IT SOLVES:  
+- Lack of real-time visibility into physical operations  
+- Periodic audits replaced by continuous safety, compliance, and risk monitoring  
+- Detection of anomalies, unsafe behavior, and process deviations in real time  
+- Fragmented operational intelligence across cameras, systems, and workflows  
+- Need for scalable architectures supporting edge, cloud, and hybrid environments  
+- Enhances human decision-making without replacing humans  
+
+CORE CAPABILITIES:  
+- Real-time visibility of people, assets, movement, and conditions  
+- AI-driven detection of posture, motion, proximity anomalies via existing cameras  
+- Continuous risk monitoring including hazards, access breaches, process deviations  
+- Predictive alerts for early warnings to intervene before incidents escalate  
+- Auditable governance with traceability and access control for regulated environments  
+- Scalable deployment architectures (edge, cloud, hybrid) with easy integration  
+
+DELIVERED OUTCOMES:  
+- Real-time machinery & asset intelligence (availability, utilization, downtime)  
+- People & workforce intelligence (presence, movement, occupancy monitoring)  
+- Automated PPE & safety compliance detection with instant alerts for non-compliance  
+- Motion & movement intelligence to detect risks such as collisions and unsafe proximity  
+- Pathway & zone monitoring enforcing designated pathways and restricted zones continuously  
+- Premises & environment safety with early hazard detection and emergency readiness insights  
+
+TARGET INDUSTRIES / CLIENT TYPES:  
+Industries served by INT. include Banking & Finance, Insurance, Life Sciences, Retail and FMCG. The Computer Vision AI service is positioned within Industry 5.0 factory operations focusing on physical operations across industrial/manufacturing environments.
+
+PROCESS / DELIVERY MODEL:  
+INT. offers a rapid Industry 5.0 Factory Assessment including:  
+- Safety, productivity and visibility gap analysis  
+- Identification of high-impact AI use cases on the shopfloor  
+- Prioritized roadmap to reduce incidents, downtime and waste   
+- Clear ROI and deployment plan  
+
+TECHNOLOGIES & PLATFORMS:  
+Supports edge computing devices, cloud platforms and hybrid deployments; integrates with existing camera systems; uses AI models for vision intelligence; scalable architecture for easy integration.
+
+NUMBERS & PROOF POINTS:   
+- 374 million non-fatal workplace accidents and 2.78 million deaths annually worldwide highlight the need for improved safety monitoring.   
+- $150.3 billion annual economic cost from work-related injuries in the U.S. underscores economic impact.   
+Case studies show measurable improvements such as:   
+- 8.4% increase in daily production cycles   
+- Over 50% reduction in equipment unavailability   
+- 18.8% increase in heats per day (industrial furnace operations)   
+- Over 58% reduction in equipment unavailability per shift   
+- 20% increase in operator efficiency scores   
+- 13% improvement in average operator availability   
+
+Summary URL for reference: https://intglobal.com/services/computer-vision-ai/
+</result>

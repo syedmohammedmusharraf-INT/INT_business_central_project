@@ -1,0 +1,141 @@
+{
+  "user_input": {
+    "pain_points": "manual work, slow onboarding, compliance risk",
+    "industry": "Banking & Financial Services",
+    "requirements": "KYC, AML, automation, compliance",
+    "technologies": "Salesforce, cloud, AI",
+    "intent": "speed, scalability, revenue impact"
+  },
+  "recommendations": [
+    {
+      "service": "INT. Insurance Capabilities.",
+      "cosine_similarity": 45.79,
+      "signal_breakdown": {
+        "pain": 0.43779414892196655,
+        "industry": 0.4058067798614502,
+        "capability": 0.4335644841194153,
+        "tech": 0.5471142530441284,
+        "intent": 0.4654368758201599
+      },
+      "why_matched": {
+        "matched_signals": [
+          "pain",
+          "industry",
+          "capability",
+          "tech",
+          "intent"
+        ]
+      },
+      "problems": "* Inefficient resource allocation and poor decision-making due to lack of real-time visibility. Slow insurance claims processing and customer dissatisfaction. Fragmented data sources leading to ineffective data management and insights. Non-user-friendly interfaces causing operational inefficiencies. Challenges in managing compliance, risk, and operational costs. *",
+      "capabilities": "* Custom application development and maintenance. Data engineering, including data lakes and BI dashboards. Integrated digital marketing and customer experience design. Cloud infrastructure management and cybersecurity. Business process management and workflow automation. Advanced analytics and AI/ML solutions. *",
+      "industries": "* Insurance industry (insurers, brokers, MGAs). Healthcare and pharmaceuticals. Various sectors requiring digital transformation and customer engagement solutions. *",
+      "technologies": "* Frontend: React, Angular, Flutter, JavaScript, Xamarin, Vue. Backend: Java, Node, Python, Django, Laravel, R, Ruby on Rails, Kotlin, PHP. Databases: MS SQL, MongoDB, SQL, NoSQL, MySQL. Cloud platforms: AWS, Azure, Google Cloud Platform (GCP). Tools: Power BI, Tableau, GitLab CI/CD, Kubernetes, Docker, Jenkins. *",
+      "intent": "* Enhanced customer satisfaction by up to 32%. Reduction in operational costs by up to 24%. Increased policy creation by 27% with a 42% reduction in costs. Improved efficiency of report generation by 44%. 72% reduction in turnaround time for policy generation. Scaled to 100K policies in 5 years, achieving 2000 Cr annual transaction volume. *",
+      "identity": "* INT. (Indus Net Technologies) is an award-winning full-stack software engineering solutions company with a legacy of 27 years, specializing in the design, development, maintenance, and support of custom applications across various devices. The company operates at the intersection of technology, data, digital infrastructure, and marketing, providing comprehensive solutions to enhance digital success. *"
+    },
+    {
+      "service": "INT.Data_Labs_Capability",
+      "cosine_similarity": 44.14,
+      "signal_breakdown": {
+        "pain": 0.4054170846939087,
+        "industry": 0.5158560872077942,
+        "capability": 0.3341785669326782,
+        "tech": 0.4885427951812744,
+        "intent": 0.46279072761535645
+      },
+      "why_matched": {
+        "matched_signals": [
+          "pain",
+          "industry",
+          "capability",
+          "tech",
+          "intent"
+        ]
+      },
+      "problems": "* Inefficient decision-making processes due to lack of actionable insights. Challenges in data integration and management. Need for enhanced risk management and compliance. Difficulty in stakeholder engagement and training. Ineffective data governance and security. Gaps in talent development and upskilling. Inability to leverage data for business growth and innovation. *",
+      "capabilities": "* Use case identification and model design/implementation. Change management enablement and stakeholder engagement. AI strategy, advisory, and model development. Data architecture, integration, and governance. Data intelligence, KPI mapping, and BI development. Advanced analytics including descriptive, predictive, and prescriptive techniques. Training and education for users. *",
+      "industries": "* Banking, Financial Services, and Insurance (BFSI) Pharmaceuticals Fast-Moving Consumer Goods (FMCG) E-commerce Other sectors requiring data-driven decision-making. *",
+      "technologies": "* BI tools such as Tableau and Power BI. Data processing frameworks (e.g., Glue, S3, Lambda, Redshift). Cloud platforms (e.g., Azure, AWS). Data integration and ETL/ELT tools. Machine learning frameworks (e.g., TensorFlow, PyTorch). Natural Language Processing (NLP) and computer vision technologies. *",
+      "intent": "* Enhanced margins and productivity. Improved business growth and innovation. Streamlined reporting and decision-making processes. Increased compliance and risk management capabilities. Better alignment of KPIs with organizational objectives. Effective customer acquisition and retention strategies. *",
+      "identity": "* This offering is a comprehensive suite of data consulting and insights management solutions designed to empower decision-making through advanced analytics, AI innovation, and data engineering. It includes a dedicated Analytics Centre of Excellence (CoE) that provides tailored analytics expertise and support. *"
+    },
+    {
+      "service": "INT. Origin Insurance Broker_POSP",
+      "cosine_similarity": 43.45,
+      "signal_breakdown": {
+        "pain": 0.36693239212036133,
+        "industry": 0.3575705289840698,
+        "capability": 0.43613725900650024,
+        "tech": 0.6078417301177979,
+        "intent": 0.4038103222846985
+      },
+      "why_matched": {
+        "matched_signals": [
+          "pain",
+          "industry",
+          "capability",
+          "tech",
+          "intent"
+        ]
+      },
+      "problems": "* Fragmented systems that hinder efficient data sharing and decision-making. Manual processes that slow operations, increase errors, and raise costs. Delays in claims processing that harm customer satisfaction and loyalty. Rising customer expectations for personalization and efficiency. Complex integration with third-party tools and legacy systems that fail to support growth. Data management challenges that limit risk assessment, underwriting, and fraud detection. *",
+      "capabilities": "* CRM and lead management Quote and buy journey Claims management Policy administration Digital document management Seamless API connectivity Advanced reporting tools Workflow automation Omnichannel support Regulatory adaptability User experience enhancements *",
+      "industries": "* Insurance companies Managing General Agents (MGAs) Brokers Underwriters Auditors Claims handlers *",
+      "technologies": "* Modern InsurTech integration Cloud and cybersecurity solutions Data analytics and AI tools Customer experience and digital marketing platforms Managed services and support systems *",
+      "intent": "* Improved operational efficiency and reduced costs through automation. Enhanced customer satisfaction and loyalty by streamlining claims processing. Increased data utilization for better risk assessment and fraud detection. Greater scalability and adaptability to market changes. Personalized customer experiences through comprehensive data management. *",
+      "identity": "* INT Origin is a comprehensive insurance management platform designed to transform the operations of insurance companies. It provides a unified, scalable, and highly customizable system that caters to the entire B2B insurance ecosystem, including MGAs, brokers, underwriters, auditors, and claims handlers, with a focus on seamless, efficient, and customer-centric insurance management. *"
+    },
+    {
+      "service": "INT. Corporate Profile",
+      "cosine_similarity": 42.67,
+      "signal_breakdown": {
+        "pain": 0.3192552328109741,
+        "industry": 0.49695050716400146,
+        "capability": 0.41415947675704956,
+        "tech": 0.4639783501625061,
+        "intent": 0.43937742710113525
+      },
+      "why_matched": {
+        "matched_signals": [
+          "pain",
+          "industry",
+          "capability",
+          "tech",
+          "intent"
+        ]
+      },
+      "problems": "* Digital transformation challenges Inefficiencies in data management and analytics Security vulnerabilities in cloud infrastructure Customer engagement and experience issues Operational inefficiencies in various industries Compliance and regulatory challenges *",
+      "capabilities": "* Technology and software development Data analytics and AI solutions Cloud and cybersecurity services Customer experience (CX) and digital marketing Managed services, maintenance, and support Project management and governance Business process management and automation *",
+      "industries": "* Insurance Life Sciences Consumer Packaged Goods (CPG) Banking and Financial Services Education Manufacturing Real Estate *",
+      "technologies": "* Programming Languages: Python, Java, Node.js, R, Ruby on Rails, etc. Data Tools: Power BI, Tableau, Qlik Sense, TensorFlow, etc. Cloud Platforms: AWS, Azure, Google Cloud Platform (GCP) Development Frameworks: React, Angular, Flutter, etc. DevOps Tools: Kubernetes, Docker, Jenkins, Terraform, etc. Digital Marketing Tools: Google Ads, Adobe Suite, etc. *",
+      "intent": "* Enhanced operational efficiency Improved customer engagement and satisfaction Scalable and secure technology solutions Rapid deployment of digital solutions Data-driven decision-making capabilities Increased revenue growth and market competitiveness *",
+      "identity": "* INT. (Indus Net Technologies) is an award-winning full-stack software engineering solutions company with a legacy of 26 years, specializing in digital transformation services at the intersection of technology, data, cloud, security, and marketing. The company has completed over 11,000 client projects for more than 500 clients globally. *"
+    },
+    {
+      "service": "INT.Data Intelligence Capabilities",
+      "cosine_similarity": 41.5,
+      "signal_breakdown": {
+        "pain": 0.3973870277404785,
+        "industry": 0.3720795512199402,
+        "capability": 0.35296058654785156,
+        "tech": 0.3924475908279419,
+        "intent": 0.5600329637527466
+      },
+      "why_matched": {
+        "matched_signals": [
+          "pain",
+          "industry",
+          "capability",
+          "tech",
+          "intent"
+        ]
+      },
+      "problems": "* Resource drain due to inefficient reporting and data overload. Lack of agility in decision-making processes. Missed opportunities from data blindness and lack of real-time insights. Challenges in tracking and analyzing decision outcomes. Fragmented data leading to inefficiencies and compliance risks. *",
+      "capabilities": "* Data integration and centralization from multiple sources. Advanced analytics and machine learning for predictive insights. Real-time reporting and dashboarding tools. Development of Centers of Excellence (COEs) for decision-making. KPI identification and mapping frameworks. *",
+      "industries": "* Pharmaceutical companies (e.g., Biocon, Cipla, SAI). Insurance companies (e.g., BALIC, NICL). Retail and manufacturing sectors (e.g., JSW, Visteon). *",
+      "technologies": "* Microsoft Azure for data integration and storage. Power BI for reporting and dashboarding. Data lakes and enterprise data warehouses for centralized data management. Advanced analytics tools for predictive and prescriptive insights. *",
+      "intent": "* Improved decision-making speed and accuracy. Enhanced operational efficiency and responsiveness. Significant cost reductions and increased revenue. Better resource allocation and utilization. Increased customer satisfaction and retention. *",
+      "identity": "* This offering focuses on transforming business performance through data intelligence and insights, enabling organizations to make connected, contextual, and continuous decisions that drive action and competitive advantage. *"
+    }
+  ]
+}

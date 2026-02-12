@@ -1,0 +1,49 @@
+# Required for build
+!pyproject.toml
+!uv.lock
+
+# Virtual environments
+.venv
+venv/
+env/
+ENV/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+
+# Sensitive / Local Env
+.env
+.env.*
+.python-version
+
+# VCS & Editors
+.git
+.gitignore
+.vscode
+.idea
+.DS_Store
+
+# Data & Database (Handled by Volumes)
+VECTOR_DB/
+data_lead_documents/
+int_global_resources/
+
+# Temporary files & Logs
+*.log
+error_log.txt
+debug_result.txt
+health_report.txt
+results_identity.txt
+collections.txt
+*.ipynb
+Scripts/
+
+# Build artifacts
+Dockerfile
+docker-compose.yml
+.dockerignore
+

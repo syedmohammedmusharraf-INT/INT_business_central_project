@@ -1,0 +1,502 @@
+I have successfully completed the task for the Cybersecurity category. 
+
+Summary of actions:
+1. Navigated to https://intglobal.com/ and confirmed the 'Services' and 'Industries' tabs.
+2. Opened Services -> Cybersecurity and identified all 7 sub-services.
+3. For each of the 7 items, I navigated to their respective pages, scrolled through all content, and extracted business-intelligence facts in the required format.
+4. The items processed were:
+   - Cybersecurity Audits & Risk Assessments
+   - Vulnerability Assessment & Penetration Testing (VAPT)
+   - Security Operations Center (SOC) & Threat Management
+   - Governance, Risk, and Compliance (GRC)
+   - Cyber Insurance & Incident Response
+   - Email Threat Protection & Compliance
+   - Managed Security Services (MSS)
+5. All extracted data is stored in files 'extracted_content_1.md' through 'extracted_content_7.md'.
+6. The progress was tracked and completed in 'todo.md'.
+
+Attachments:
+
+todo.md:
+- [x] Cybersecurity Audits & Risk Assessments\n- [x] Vulnerability Assessment & Penetration Testing (VAPT)\n- [x] Security Operations Center (SOC) & Threat Management\n- [x] Governance, Risk, and Compliance (GRC)\n- [x] Cyber Insurance & Incident Response\n- [x] Email Threat Protection & Compliance\n- [x] Managed Security Services (MSS)
+
+
+extracted_content_1.md:
+<url>
+https://intglobal.com/services/cybersecurity-audits-risk-assessments/
+</url>
+<query>
+Extract business-intelligence facts for 'Cybersecurity Audits & Risk Assessments' following the specified format: ENTITY TYPE, TOP LEVEL TAB, LEFT CATEGORY, TITLE, PAGE URL, WHAT IT IS, WHAT PROBLEMS IT SOLVES, CORE CAPABILITIES, DELIVERED OUTCOMES, TARGET INDUSTRIES / CLIENT TYPES, PROCESS / DELIVERY MODEL, TECHNOLOGIES & PLATFORMS, NUMBERS & PROOF POINTS.
+</query>
+<result>
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: Cybersecurity  
+TITLE: Cybersecurity Audits & Risk Assessments  
+PAGE URL: https://intglobal.com/services/cybersecurity (inferred from site structure; exact URL not explicitly provided)  
+
+WHAT IT IS:  
+Cybersecurity Audits & Risk Assessments by Indus Net Technologies (INT.) are comprehensive evaluations that expose vulnerabilities early, benchmark defenses, and deliver actionable strategies to boost resilience and ensure compliance. These audits cover networks, applications, data, and endpoints with risk assessments aligned to business-critical processes and industry standards.
+
+WHAT PROBLEMS IT SOLVES:  
+- Unseen security gaps that lead to breaches  
+- Misalignment of security investments with business priorities  
+- Lack of regulatory compliance (GDPR, HIPAA, PCI-DSS, ISO 27001, etc.)  
+- Ineffective risk prioritization and remediation planning  
+- Insufficient stakeholder enablement and communication of risks in business terms  
+
+CORE CAPABILITIES:  
+- Full-spectrum audits covering networks, applications, data, and endpoints  
+- Risk assessments aligned with business-critical processes and industry standards  
+- Regulatory compliance checks for GDPR, HIPAA, PCI-DSS, ISO 27001, etc.  
+- Prioritized remediation roadmap focusing on high-risk gaps first  
+- Continuous improvement cycle adapting to new threats and regulations  
+- Stakeholder enablement for IT and CXOs to lead security maturity  
+- Impact-based prioritization ranking vulnerabilities by potential damage to revenue and continuity  
+- Executive translation converting technical risks into boardroom-ready language  
+- Risk quantification expressing cyber threats in financial terms to justify budgets  
+- Ongoing advisory with continuous guidance for lasting cyber resilience  
+
+DELIVERED OUTCOMES:  
+- Enhanced stakeholder confidence and trust through formal security assessments (77% improvement reported by SentinelOne)  
+- Reduced incident response times and faster recovery from breaches protecting business continuity (0% cited as reduced incident response time in SentinelOne report) [Note: 0% likely a typographical or data error in source]  
+- Real measurable risk reduction enterprise-wide across six dimensions including business-aligned risk mapping, 360° surface coverage (people, processes, systems, vendors), tactical + strategic playbooks, real-world threat modeling, executive dashboards & heatmaps, post-audit advisory support for 90 days  
+
+TARGET INDUSTRIES / CLIENT TYPES:  
+- Banking & Finance  
+- Insurance  
+- Life Sciences  
+- Retail and FMCG  
+
+PROCESS / DELIVERY MODEL:  
+- Multi-layer audits covering all digital touchpoints including AWS cloud environments, mobile platforms, fintech APIs (case study example)  
+- 8-week engagement to achieve full regulatory alignment across digital touchpoints (case study)  
+- Post-audit 90-day advisory support for continuous improvement  
+
+TECHNOLOGIES & PLATFORMS:  
+Not explicitly detailed; includes audits across networks, applications, data endpoints; compliance with standards such as GDPR, HIPAA, PCI-DSS, ISO 27001; includes AWS cloud environments and fintech APIs as per case study example.  
+
+NUMBERS & PROOF POINTS:  
+- 77% of clients achieve enhanced stakeholder confidence through formal security assessments (SentinelOne)  
+- Case study: Southeast Asia-based digital lender achieved full regulatory alignment in 8 weeks across AWS, mobile, fintech APIs with a 40% reduction in risk exposure across three core business units.  
+
+Additional Notes: The service emphasizes moving beyond checklist audits towards strategic assessments that surface real risks aligned with business priorities and actionable remediation plans. The approach includes executive dashboards for clear insights and financial quantification of risks to support budget justification.  
+
+Summary URL for reference (homepage): https://intglobal.com/
+</result>
+
+extracted_content_2.md:
+<url>
+https://intglobal.com/services/vulnerability-assessment-penetration-testing-vapt/
+</url>
+<query>
+Extract business-intelligence facts for 'Vulnerability Assessment & Penetration Testing (VAPT)' following the specified format: ENTITY TYPE, TOP LEVEL TAB, LEFT CATEGORY, TITLE, PAGE URL, WHAT IT IS, WHAT PROBLEMS IT SOLVES, CORE CAPABILITIES, DELIVERED OUTCOMES, TARGET INDUSTRIES / CLIENT TYPES, PROCESS / DELIVERY MODEL, TECHNOLOGIES & PLATFORMS, NUMBERS & PROOF POINTS.
+</query>
+<result>
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: Cybersecurity  
+TITLE: Vulnerability Assessment & Penetration Testing (VAPT)  
+PAGE URL: https://intglobal.com/services/cybersecurity/vulnerability-assessment-penetration-testing-vapt (inferred from site structure, exact URL not explicitly given)  
+
+WHAT IT IS:  
+VAPT simulates real-world attacks to uncover, prioritize, and help fix security gaps, hardening systems against evolving threats. It includes comprehensive vulnerability scans across networks, applications, and infrastructure with real-world penetration testing that simulates attacker behavior.
+
+WHAT PROBLEMS IT SOLVES:  
+- Identifies security vulnerabilities before attackers exploit them.  
+- Reduces incident response time and operational disruptions.  
+- Provides prioritized remediation insights based on risk and business impact.  
+- Ensures regulatory compliance with GDPR, HIPAA, PCI-DSS, and ISO standards.  
+- Maintains continuous testing to keep defenses updated against evolving threats.
+
+CORE CAPABILITIES:  
+- Comprehensive vulnerability scanning across networks, apps, infrastructure.  
+- Real-world penetration testing simulating attacker behavior including insider attacks, APTs, and supply chain exploits.  
+- Prioritized remediation based on business-critical impact rather than just CVSS scores.  
+- Compliance mapping aligned with ISO 27001, PCI DSS, HIPAA, GDPR.  
+- Executive-level reporting with board-ready visuals and actionable narratives.  
+- Remediation validation through retesting, delta analysis, and real-time intelligence.  
+- Asset coverage including web, mobile, cloud, APIs, network, third-party integrations.  
+- Blend of automated scans and manual deep-dive assessments for comprehensive coverage.  
+- AI-augmented risk analysis using real-time threat intelligence and machine learning.  
+- Certified ethical hackers (OSCP, CEH, CISSP) performing tests with attacker mindset.
+
+DELIVERED OUTCOMES:  
+- 50% reduction in incident response time after adopting VAPT (source: Strobes).  
+- 32% of organizations conduct pen tests annually or bi-annually to identify vulnerabilities early (source: ZeroThreat).  
+- Case study example: Digital Health Platform resolved 94% of critical vulnerabilities and achieved 97% audit success with INT.'s VAPT; also experienced 3x faster remediation cycles.
+
+TARGET INDUSTRIES / CLIENT TYPES:  
+- Banking & Finance  
+- Insurance  
+- Life Sciences  
+- Retail and FMCG  
+
+PROCESS / DELIVERY MODEL:  
+- Business-contextual testing linking vulnerabilities to revenue, reputation, compliance risks.  
+- Quarterly retesting combined with threat intelligence updates to ensure fixes persist and adapt to new vulnerabilities.   
+- Stakeholder enablement providing IT teams and CXOs clear next steps and decision-grade insights.
+
+TECHNOLOGIES & PLATFORMS:  
+Coverage includes web applications, mobile apps, cloud environments, APIs, network infrastructure, third-party integrations; uses AI for risk analysis; integrates dashboards with GA4, Mixpanel, Hotjar for real-time feedback.
+
+NUMBERS & PROOF POINTS:  
+- 50% reduction in incident response time post VAPT adoption (Strobes).   
+- 32% organizations conduct pen tests annually/bi-annually (ZeroThreat).   
+- Digital Health Platform case study resolving 94% critical vulnerabilities; 97% audit success; 3x faster remediation cycles.
+
+Additional notes: The service is positioned as a proactive shield essential for business security rather than optional. Executive reporting is emphasized for board-level communication of risks and mitigation ROI.
+
+# Summary:
+ENTITY TYPE: Service
+TOP LEVEL TAB: Services
+LEFT CATEGORY: Cybersecurity
+TITLE: Vulnerability Assessment & Penetration Testing (VAPT)
+PAGE URL: https://intglobal.com/services/cybersecurity/vulnerability-assessment-penetration-testing-vapt (inferred)
+WHAT IT IS: Simulated real-world cyberattacks to identify and remediate security vulnerabilities across networks/apps/infrastructure.
+WHAT PROBLEMS IT SOLVES: Detects security gaps before exploitation; reduces incident response time; ensures regulatory compliance; continuous defense against evolving threats.
+CORE CAPABILITIES: Comprehensive scanning; real-world attack simulation; prioritized risk-based remediation; compliance mapping; executive reporting; remediation validation; broad asset coverage; AI-enhanced risk analysis; certified ethical hackers.
+DELIVERED OUTCOMES: 50% reduction in incident response time; case study with 94% critical vulnerability resolution & 97% audit success.
+TARGET INDUSTRIES / CLIENT TYPES: Banking & Finance; Insurance; Life Sciences; Retail & FMCG.
+PROCESS / DELIVERY MODEL: Business-contextual testing; quarterly retesting + threat intel updates; stakeholder enablement.
+TECHNOLOGIES & PLATFORMS: Web/mobile/cloud/APIs/network/third-party integrations coverage; AI-powered analytics; integration with GA4/Mixpanel/Hotjar dashboards.
+NUMBERS & PROOF POINTS:
+ - 50% reduction in incident response time (Strobes)
+ - 32% organizations conduct regular pen tests (ZeroThreat)
+ - Digital Health Platform case study resolving 94% critical vulnerabilities with INT.'s VAPT
+
+This is the complete information extracted from the webpage content provided.
+</result>
+
+extracted_content_3.md:
+<url>
+https://intglobal.com/services/security-operations-center-soc-threat-management/
+</url>
+<query>
+Extract business-intelligence facts for 'Security Operations Center (SOC) & Threat Management' following the specified format: ENTITY TYPE, TOP LEVEL TAB, LEFT CATEGORY, TITLE, PAGE URL, WHAT IT IS, WHAT PROBLEMS IT SOLVES, CORE CAPABILITIES, DELIVERED OUTCOMES, TARGET INDUSTRIES / CLIENT TYPES, PROCESS / DELIVERY MODEL, TECHNOLOGIES & PLATFORMS, NUMBERS & PROOF POINTS.
+</query>
+<result>
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: Cybersecurity  
+TITLE: Security Operations Center (SOC) & Threat Management  
+PAGE URL: https://intglobal.com/services/cybersecurity/security-operations-center-soc-threat-management (inferred from site structure, exact URL not explicitly given)  
+
+WHAT IT IS:  
+A 24/7 command center that blends expert oversight with AI to monitor, detect, and neutralize cyber risks in real time, ensuring continuous protection and faster response.
+
+WHAT PROBLEMS IT SOLVES:  
+- Instant detection and response to cyber threats  
+- Managing increased alert volumes with scalable SOC solutions  
+- Minimizing downtime and damage through incident response playbooks  
+- Proactively uncovering risks before they escalate through threat hunting  
+- Ensuring compliance with global security standards  
+
+CORE CAPABILITIES:  
+- 24/7 monitoring across endpoints, cloud, and applications  
+- AI-powered threat intelligence for faster, more accurate detection  
+- Incident response playbooks for minimizing downtime and damage  
+- Proactive threat hunting to identify hidden adversaries early  
+- Compliance-ready operations aligned with global standards  
+- Risk modeling to predict future threats and quantify business impact  
+- Adaptive playbooks that evolve with threat landscape changes  
+- Business-aligned dashboards translating technical data into executive clarity  
+- Contextual alerting prioritizing critical threats  
+
+DELIVERED OUTCOMES:  
+- 93% alert triage automated, reducing low-priority noise  
+- Mean Time To Respond (MTTR) reduced to 1.8 hours from 12 hours (85% improvement) in a BFSI enterprise case study  
+- Continuous 24x7 visibility and faster threat response  
+
+TARGET INDUSTRIES / CLIENT TYPES:  
+- Banking & Finance (BFSI) enterprises specifically mentioned in case study context; likely applicable across industries requiring cybersecurity  
+
+PROCESS / DELIVERY MODEL:  
+- Global 24/7 managed SOC staffed by experienced analysts at every tier  
+- AI-infused threat intelligence continuously updated from global telemetry sources  
+- Dynamic response playbooks tailored by asset criticality and threat type  
+- CXO-focused impact mapping linking alerts to business KPIs such as downtime avoided and trust preserved  
+
+TECHNOLOGIES & PLATFORMS:  
+- AI-powered threat intelligence systems integrated with global telemetry data sources  
+- Automated incident response workflows with SLA-bound playbooks and automation tools  
+- Business intelligence dashboards with real-time feedback integrations (e.g., GA4, Mixpanel, Hotjar mentioned elsewhere on site)  
+
+NUMBERS & PROOF POINTS:  
+- 77% of organizations report increased alert volumes driving demand for scalable SOC solutions (Gurucul)  
+- 0% of organizations report improved threat detection and response times with SOC implementation (SecuCenter) [Note: This appears as zero percent in source; possibly a typographical error or placeholder]  
+- Case study highlights BFSI enterprise achieving 85% reduction in response time and 24x7 visibility through INT.’s virtual SOC deployment.  
+
+Additional notes: The service is positioned as a proactive, predictive defense solution replacing reactive security. It emphasizes sustainability practices such as low-carbon hosting and compliance with regulations including SEBI, HIPAA, GDPR, WCAG. The company offers a free SOC Maturity & Threat Posture Assessment including attack surface snapshot, readiness scorecard, executive risk heatmap, and strategy consultation.
+</result>
+
+extracted_content_4.md:
+<url>
+https://intglobal.com/services/governance-risk-compliance-grc/
+</url>
+<query>
+Extract business-intelligence facts for 'Governance, Risk, and Compliance (GRC)' following the specified format: ENTITY TYPE, TOP LEVEL TAB, LEFT CATEGORY, TITLE, PAGE URL, WHAT IT IS, WHAT PROBLEMS IT SOLVES, CORE CAPABILITIES, DELIVERED OUTCOMES, TARGET INDUSTRIES / CLIENT TYPES, PROCESS / DELIVERY MODEL, TECHNOLOGIES & PLATFORMS, NUMBERS & PROOF POINTS.
+</query>
+<result>
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: Cybersecurity  
+TITLE: Governance, Risk, and Compliance (GRC)  
+PAGE URL: https://intglobal.com (implied from content)  
+
+WHAT IT IS:  
+GRC services that align policies, manage risks, and meet global standards with practical, scalable frameworks built for your business. It is a comprehensive GRC framework tailored to industry and regulatory environments.
+
+WHAT PROBLEMS IT SOLVES:  
+- Compliance lapses that damage trust and cost more than fines  
+- Fragmented compliance management  
+- Manual audit preparation and reporting inefficiencies  
+- Difficulty in maintaining continuous compliance with evolving regulations  
+
+CORE CAPABILITIES:  
+- Comprehensive GRC frameworks tailored to industry and regulatory environment  
+- Risk management programs to identify, assess, and mitigate vulnerabilities  
+- Policy design and enforcement to strengthen governance across operations  
+- Audit readiness and reporting for GDPR, HIPAA, PCI-DSS, ISO 27001, and more  
+- Continuous monitoring to ensure compliance evolves with changing regulations  
+- Unified risk view with real-time dashboards mapping enterprise-wide risk exposure  
+- Adaptive frameworks that evolve with the business  
+- Agile collaboration among legal, IT, and operations teams from one source of truth  
+- Executive visibility with CXO-ready reporting and real-time audit readiness  
+- Intelligent remediation with prioritized, automated risk resolution workflows  
+- Policy automation including streamlined approvals, version control, and alerts  
+- Predictive analytics to identify emerging threats before they materialize  
+
+DELIVERED OUTCOMES:  
+- 75% reduction in time spent on continuity and resilience management tasks through automated GRC workflows (Riskonnect)  
+- 82% cut in reporting effort by removing manual audit preparation (case study)  
+- 24/7 real-time audit readiness ensuring continuous compliance across departments (case study)  
+
+TARGET INDUSTRIES / CLIENT TYPES:  
+Implied broad applicability; case study references financial institution. Also relevant for industries requiring GDPR, HIPAA, PCI-DSS compliance such as Banking & Finance, Insurance, Life Sciences, Retail and FMCG.
+
+PROCESS / DELIVERY MODEL:  
+INT.’s GRC Evolution Framework™ includes zero-disruption deployment integrating into existing ecosystems without slowing teams down; quarterly innovation sprints evolving GRC posture without added cost; cross-functional enablement uniting legal, security, IT, and business teams.
+
+TECHNOLOGIES & PLATFORMS:  
+AI-fed controls and audit trails for automated compliance operations; built-in dashboards; integrations with GA4 (Google Analytics 4), Mixpanel, Hotjar for real-time feedback; use of Riskonnect platform for workflow automation.
+
+NUMBERS & PROOF POINTS:  
+- 75% reduction in time spent on continuity/resilience management tasks via automated workflows (Riskonnect)  
+- 0% organizations report increasing GRC budgets due to regulatory scrutiny (Hyperproof) [Note: This seems like a typo or misstatement in source]  
+- 82% cut in reporting effort at a financial entity case study by INT. GRC services   
+- 24/7 real-time audit readiness achieved in the same case study  
+
+Additional info: INT. offers a free GRC Health Audit including Enterprise Risk Landscape Report, Regulatory Gap Analysis, Tailored GRC Maintenance Roadmap, and a 30-minute strategy consult with CXO advisors.
+
+Summary URL reference for Governance Risk Compliance service page is implied as part of https://intglobal.com/services/cybersecurity/governance-risk-and-compliance-grc or similar but exact URL not explicitly provided.
+</result>
+
+extracted_content_5.md:
+<url>
+https://intglobal.com/services/cyber-insurance-incident-response/
+</url>
+<query>
+Extract business-intelligence facts for 'Cyber Insurance & Incident Response' following the specified format: ENTITY TYPE, TOP LEVEL TAB, LEFT CATEGORY, TITLE, PAGE URL, WHAT IT IS, WHAT PROBLEMS IT SOLVES, CORE CAPABILITIES, DELIVERED OUTCOMES, TARGET INDUSTRIES / CLIENT TYPES, PROCESS / DELIVERY MODEL, TECHNOLOGIES & PLATFORMS, NUMBERS & PROOF POINTS.
+</query>
+<result>
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: Cybersecurity  
+TITLE: Cyber Insurance & Incident Response  
+PAGE URL: https://intglobal.com/services/cybersecurity/cyber-insurance-incident-response (inferred from site structure; exact URL not explicitly provided)  
+
+WHAT IT IS:  
+Cyber Insurance & Incident Response is a service that contains cyber threats, minimizes damage, restores operations, and covers financial and legal exposure when breaches happen. It provides immediate incident response to contain breaches and limit impact, forensic investigation to identify root causes and prevent recurrence, business continuity planning to restore critical systems fast, cyber insurance advisory to align coverage with evolving risks, and regulatory reporting & compliance support to reduce penalties and liabilities.  
+
+WHAT PROBLEMS IT SOLVES:  
+- Rapid containment of cyber breaches  
+- Minimizing operational and financial damage from cyber incidents  
+- Restoring critical business systems quickly after an attack  
+- Aligning cyber insurance coverage with current risk landscape  
+- Supporting regulatory compliance and reducing penalties related to breaches  
+
+CORE CAPABILITIES:  
+- Immediate incident response for breach containment  
+- Forensic investigation for root cause analysis and prevention  
+- Business continuity planning for fast system restoration  
+- Cyber insurance advisory for coverage optimization  
+- Regulatory reporting and compliance support  
+- 24/7 incident response by certified experts globally on standby  
+- Forensic advocacy ensuring faster, fuller insurance payouts with bulletproof documentation  
+- Breach simulation readiness with quarterly playbook testing and refinement  
+- CXO-ready dashboards visualizing risk in boardroom language  
+
+DELIVERED OUTCOMES:  
+- Containment of threats within golden hours after breach detection  
+- Faster system recovery demonstrated by a fintech case study restoring systems in 72 hours and cutting cyber premiums by 15% through improved controls  
+- Maximum claims recovery through insurer-aligned documentation and advocacy  
+- Continuous improvement turning every breach into a resilience multiplier  
+
+TARGET INDUSTRIES / CLIENT TYPES:  
+While not explicitly limited, the service is positioned broadly for enterprises requiring cyber resilience. The company serves industries including Banking & Finance, Insurance, Life Sciences, Retail and FMCG. The case study references a fintech firm as a client example.  
+
+PROCESS / DELIVERY MODEL:  
+- Personalized cyber risk heatmap generation  
+- Insurance gap & exposure reporting  
+- Executive incident response strategy briefing  
+- Tabletop simulation recommendations for preparedness testing  
+
+TECHNOLOGIES & PLATFORMS:  
+Integrated dashboards with GA4 (Google Analytics 4), Mixpanel, Hotjar for real-time feedback and performance optimization. Use of AI-enabled incident response automation is mentioned in cost reduction statistics (IBM data referenced).  
+
+NUMBERS & PROOF POINTS:  
+- $1.49 million average savings per breach for companies with formal incident response plans (IBM)  
+- $0 million reduction in breach costs with AI-enabled incident response automation (IBM) [Note: "$0M" likely a typographical or formatting error in source]   
+- Fintech case study: 72-hour system recovery post-ransomware attack; 15% projected drop in cyber premiums due to improved controls  
+
+Additional Notes: The service emphasizes that Cyber Insurance & Incident Response are critical safety nets when minutes matter during a breach. INT. offers free cyber resilience audits including personalized risk heatmaps and executive briefings.
+
+# Summary
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: Cybersecurity  
+TITLE: Cyber Insurance & Incident Response   
+PAGE URL: https://intglobal.com/services/cybersecurity/cyber-insurance-incident-response (inferred)  
+
+WHAT IT IS: Service providing rapid containment, forensic investigation, business continuity planning, insurance advisory, and compliance support during cyber breaches.  
+
+WHAT PROBLEMS IT SOLVES: Minimizes damage from breaches; restores operations quickly; aligns insurance coverage; supports regulatory compliance; reduces financial/legal exposure.  
+
+CORE CAPABILITIES: Immediate IR; forensic analysis; continuity planning; insurance advisory; regulatory support; 24/7 expert IR; forensic advocacy; breach simulation readiness; CXO dashboards.  
+
+DELIVERED OUTCOMES: Threat containment within golden hours; faster recovery (72h fintech case); reduced premiums (15% fintech case); maximum claims recovery; continuous resilience improvement.  
+
+TARGET INDUSTRIES / CLIENT TYPES: Enterprises across Banking & Finance, Insurance, Life Sciences, Retail/FMCG; example fintech client cited.  
+
+PROCESS / DELIVERY MODEL: Personalized risk heatmaps; insurance gap reports; executive IR strategy briefings; tabletop simulations.  
+
+TECHNOLOGIES & PLATFORMS: Dashboards integrating GA4, Mixpanel, Hotjar; AI-enabled IR automation referenced via IBM data.  
+
+NUMBERS & PROOF POINTS:
+- $1.49M average savings per breach with formal IR plans (IBM)   
+- Fintech case study with 72h recovery and 15% premium reduction   
+- AI-enabled IR automation reduces breach costs (IBM data)
+</result>
+
+extracted_content_6.md:
+<url>
+https://intglobal.com/services/email-threat-protection-compliance/
+</url>
+<query>
+Extract business-intelligence facts for 'Email Threat Protection & Compliance' following the specified format: ENTITY TYPE, TOP LEVEL TAB, LEFT CATEGORY, TITLE, PAGE URL, WHAT IT IS, WHAT PROBLEMS IT SOLVES, CORE CAPABILITIES, DELIVERED OUTCOMES, TARGET INDUSTRIES / CLIENT TYPES, PROCESS / DELIVERY MODEL, TECHNOLOGIES & PLATFORMS, NUMBERS & PROOF POINTS.
+</query>
+<result>
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: Cybersecurity  
+TITLE: Email Threat Protection & Compliance  
+PAGE URL: https://intglobal.com/services/cybersecurity/email-threat-protection-compliance (inferred from site structure, exact URL not explicitly given)  
+
+WHAT IT IS:  
+Advanced email security service that blocks threats before they reach inboxes, protects sensitive data, and ensures regulatory compliance. It is a business-critical defense against financial, legal, and reputational risk related to email threats.
+
+WHAT PROBLEMS IT SOLVES:  
+- Stops phishing, malware, and zero-day exploits targeting email.  
+- Prevents data loss of sensitive business information.  
+- Secures communications through encryption and archiving.  
+- Enforces compliance with industry regulations such as GDPR, HIPAA, PCI.  
+- Provides real-time monitoring and reporting for visibility and accountability.
+
+CORE CAPABILITIES:  
+- Advanced threat detection for phishing, malware, zero-day exploits.  
+- Data Loss Prevention (DLP).  
+- Encryption and archiving of emails.  
+- Policy-based compliance controls across industries.  
+- Real-time monitoring and reporting dashboards.  
+- Comprehensive email security audits including risk discovery, stakeholder enablement, ongoing advisory, risk quantification in financial terms, executive translation of risks, regulatory alignment (ISO 27001, DPDP, RBI, HIPAA), actionable remediation plans (phishing quarantine to auto-removal), impact-based prioritization of vulnerabilities.  
+- 360° coverage including inboxes, attachments, cloud collaboration apps (OneDrive, Teams, SharePoint, Slack).  
+- Tactical and strategic playbooks for incident readiness and compromised user isolation.  
+- Real-world threat modeling via phishing and malware simulations.  
+- Executive dashboards and heatmaps for clear business language reporting.  
+- Post-audit advisory support for 90 days to maintain visibility and compliance.
+
+DELIVERED OUTCOMES:  
+- 40% reduction in phishing-related incidents after implementation (Barracuda reference).  
+- 65% faster threat detection and response times due to automated monitoring (Mordor Intelligence reference).  
+- Case study example: Southeast Asia-based digital lender achieved DPDP compliance in 8 weeks and reduced phishing exposure by 40%.
+
+TARGET INDUSTRIES / CLIENT TYPES:  
+Industries served include Banking & Finance, Insurance, Life Sciences, Retail and FMCG; suitable for enterprises requiring regulatory compliance and protection against email-borne cyber threats.
+
+PROCESS / DELIVERY MODEL:  
+Comprehensive email security audits with phases including risk discovery, stakeholder enablement across IT/compliance/CXOs, ongoing advisory services; tactical + strategic playbooks; real-world threat simulations; executive-level reporting; post-audit advisory support.
+
+TECHNOLOGIES & PLATFORMS:  
+Covers email traffic systems including inboxes and attachments plus cloud collaboration platforms such as OneDrive, Teams, SharePoint, Slack.
+
+NUMBERS & PROOF POINTS:  
+- 40% reduction in phishing incidents post-deployment (Barracuda).  
+- 65% faster detection/response times with automation (Mordor Intelligence).  
+- Digital lender case study: DPDP compliance in 8 weeks; 40% phishing exposure reduction.
+
+Additional references to INT.’s expertise include years of excellence (0+ years), multiple offices worldwide (0), solution experts (0+), worldwide happy clients (0+), recognized by various awards.
+
+Note: The exact page URL for Email Threat Protection & Compliance is not explicitly provided but can be inferred from the site structure under Services > Cybersecurity > Email Threat Protection & Compliance on https://intglobal.com/.
+</result>
+
+extracted_content_7.md:
+<url>
+https://intglobal.com/services/managed-security-services-mss/
+</url>
+<query>
+Extract business-intelligence facts for 'Managed Security Services (MSS)' following the specified format: ENTITY TYPE, TOP LEVEL TAB, LEFT CATEGORY, TITLE, PAGE URL, WHAT IT IS, WHAT PROBLEMS IT SOLVES, CORE CAPABILITIES, DELIVERED OUTCOMES, TARGET INDUSTRIES / CLIENT TYPES, PROCESS / DELIVERY MODEL, TECHNOLOGIES & PLATFORMS, NUMBERS & PROOF POINTS.
+</query>
+<result>
+ENTITY TYPE: Service  
+TOP LEVEL TAB: Services  
+LEFT CATEGORY: Cybersecurity  
+TITLE: Managed Security Services (MSS)  
+PAGE URL: https://intglobal.com/ (inferred from content domain)  
+
+WHAT IT IS:  
+Managed Security Services (MSS) by Indus Net Technologies (INT.) provide 24/7 monitoring, threat detection, and incident response using expert teams and advanced tools to deliver enterprise-grade protection without the cost of an in-house security team.  
+
+WHAT PROBLEMS IT SOLVES:  
+- Continuous protection against cyber attacks beyond office hours  
+- Faster detection and mitigation of threats  
+- Reduces costs associated with security incidents  
+- Ensures compliance with regulations such as GDPR, HIPAA, PCI-DSS, ISO, SOC2  
+- Addresses vulnerability management and patching proactively  
+- Provides peace of mind with scalable security aligned to business risk profiles  
+
+CORE CAPABILITIES:  
+- 24x7 Threat Detection and Real-Time Response  
+- Automated Response Playbooks for rapid threat mitigation  
+- Unified Threat Visibility across cloud, network, applications, and endpoints  
+- Predictive Defense to detect anomalies before escalation  
+- Security-as-Code frameworks enabling DevSecOps with governance  
+- Zero-Trust Access Mapping for continuous verification of access  
+- Regulatory Readiness aligned to multiple global standards (ISO, SOC2, PCI DSS, HIPAA)  
+- CXO Reporting with boardroom-level clarity on threats and risks  
+- AI-driven Security Operations Center (SOC) for faster triage and prioritization  
+- Proactive Threat Hunting combining human expertise and machine learning  
+
+DELIVERED OUTCOMES:  
+- 50% faster detection and response times compared to in-house security alone (source: Scoop)  
+- 40% reduction in security incident costs leveraging MSS solutions (source: ResearchAndMarkets)  
+Case Study Example: Logistics firm achieved a 60% reduction in phishing attacks within 90 days and improved endpoint compliance from 58% to 99.9% through automated patching using INT.’s MSS.  
+
+TARGET INDUSTRIES / CLIENT TYPES:  
+Industries served by INT. include Banking & Finance, Insurance, Life Sciences, Retail and FMCG. MSS is applicable broadly across enterprises requiring robust cybersecurity and compliance support.  
+
+PROCESS / DELIVERY MODEL:  
+INT.’s MSS model integrates deep intelligence, automation, and industry alignment into client operations focusing on engineering enterprise resilience rather than reactive responses. The service is scalable to match business size and risk profile. Delivery includes continuous monitoring, automated playbooks for response, AI-driven SOC operations, proactive threat hunting, and executive reporting dashboards.  
+
+TECHNOLOGIES & PLATFORMS:  
+- AI-driven SOC tools for triage and prioritization  
+- Security-as-Code frameworks supporting DevSecOps velocity with governance built-in  
+- Integration of dashboards with analytics platforms like GA4, Mixpanel, Hotjar for real-time feedback and optimization  
+
+NUMBERS & PROOF POINTS:  
+- 50% faster detection and response times reported by companies using MSS vs in-house only (Scoop)  
+- 40% reduction in security incident costs reported by companies leveraging MSS solutions (ResearchAndMarkets)  
+- Case study logistics firm results: 60% drop in phishing attacks within 90 days; endpoint compliance improved to 99.9% from 58%.  
+
+Additional Information Link (implied): https://intglobal.com/services/cybersecurity/managed-security-services-mss (exact URL not explicitly provided but inferred from site structure).
+</result>
