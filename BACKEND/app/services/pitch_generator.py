@@ -140,6 +140,64 @@ async def generate_pitch_content(lead: Dict[str, Any], selected_services: List[s
         return _generate_fallback_pitch(lead, selected_services, config)
 
 
+async def regenerate_pitch_content(original_content: str, user_feedback: str, config: PitchConfig) -> str:
+    """
+    Refines an existing pitch based on specific user feedback.
+    Maintains the professional structure while incorporating modifications.
+    """
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        return f"{original_content}\n\n[REGENERATION FAILED: No API Key]\n{user_feedback}"
+
+    try:
+        model = ChatOpenAI(
+            api_key=api_key,
+            model="gpt-4o-mini",
+            temperature=0.4
+        )
+
+        prompt_template = PromptTemplate(
+            template="""
+        You are an expert sales strategist. I have an existing enterprise proposal that needs refinement.
+
+        ORIGINAL PROPOSAL:
+        ---
+        {original_content}
+        ---
+
+        USER FEEDBACK / MODIFICATIONS REQUESTED:
+        ---
+        {user_feedback}
+        ---
+
+        INSTRUCTIONS:
+        1. Rewrite the proposal while strictly incorporating the modifications requested in the User Feedback.
+        2. Mantain the original professional tone ({tone}) and target audience ({audience}).
+        3. Do NOT change sections that were not affected by the feedback.
+        4. Preserve the overall structure (Executive Summary, Challenges, Solution, etc.).
+        5. Ensure the new version flows naturally and professionally.
+        6. Do NOT use emojis or marketing fluff.
+
+        Refined Proposal:
+        """,
+            input_variables=["original_content", "user_feedback", "tone", "audience"]
+        )
+
+        prompt_text = prompt_template.format(
+            original_content=original_content,
+            user_feedback=user_feedback,
+            tone=config.tone,
+            audience=config.audience
+        )
+
+        response = await model.ainvoke(prompt_text)
+        return response.content.strip()
+
+    except Exception as e:
+        print(f"Error in pitch regeneration: {e}")
+        return f"{original_content}\n\n[REGENERATION ERROR: {str(e)}]\n{user_feedback}"
+
+
 def _generate_fallback_pitch(lead: Dict[str, Any], selected_services: List[str], config: PitchConfig) -> str:
     """Fallback generator in case of API failure."""
     company_name = lead.get("company_name", "your company")

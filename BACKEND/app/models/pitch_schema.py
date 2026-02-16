@@ -13,6 +13,10 @@ class PitchCreate(BaseModel):
     selected_services: List[str]
     config: PitchConfig
 
+class PitchRegenerate(BaseModel):
+    pitch_id: str
+    user_feedback: str
+
 class PitchDB(BaseModel):
     id: str = Field(default_factory=lambda: None, alias="_id")
     lead_id: str

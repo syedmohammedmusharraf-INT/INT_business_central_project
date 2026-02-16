@@ -2,8 +2,8 @@ import asyncio
 from browser_use import Agent, Browser, ChatOpenAI 
 from BACKEND.app.prompts.Linkedin_TaskPrompt import Task
 import json
-from BACKEND.app.models.Linkedin_output import content
-from LinkedinTools import tools
+from BACKEND.app.models.linkedin_extract_output import content
+from BACKEND.app.utils.LinkedinTools import tools
 from dotenv import load_dotenv
 import os
 os.environ["ANONYMIZED_TELEMETRY"] = "false"
@@ -29,10 +29,11 @@ sensitive_data = {'x_user': 'syedmdmusharraf@gmail.com', 'x_pass': 'Musharraf@20
 
 
 async def main():
+        test_url = "https://www.linkedin.com/in/kunalshah1/"
         agent = Agent(
-            task=Task,
+            task=Task.format(linkedin_url=test_url),
             sensitive_data = sensitive_data,
-            use_vision=False,
+            use_vision=True,
             llm=llm,
             output_model_schema=content,
             tools=tools,

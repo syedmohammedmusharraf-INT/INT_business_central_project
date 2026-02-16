@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException, Body
 from app.services.lead_intelligence import generate_service_alignment
-from app.services.pitch_generator import generate_pitch_content
+from app.services.pitch_generator import generate_pitch_content, regenerate_pitch_content
 from app.services.lead_linkedin_entry import validate_lead_linkedin_profile
-from app.models.pitch_schema import PitchCreate, PitchDB
+from app.models.pitch_schema import PitchCreate, PitchDB, PitchRegenerate, PitchConfig
 from app.core.database import get_db
 from bson import ObjectId
 from datetime import datetime, timezone
@@ -73,8 +73,8 @@ async def generate_pitch(payload: PitchCreate):
         }
         
         content = await generate_pitch_content(
-            lead_context, 
-            payload.selected_services, 
+            lead_context,              # context of the lead get added
+            payload.selected_services, # matched services selected
             payload.config
         )
         
@@ -102,6 +102,55 @@ async def generate_pitch(payload: PitchCreate):
     except Exception as e:
         print(f"Error generating pitch: {e}")
         raise HTTPException(status_code=500, detail=str(e))
+
+@router.post("/intelligence/regenerate-pitch")
+async def regenerate_pitch(payload: PitchRegenerate):
+    db = get_db()
+    try:
+        # 1. Fetch original pitch
+        original_pitch = await db.pitches.find_one({"_id": ObjectId(payload.pitch_id)})
+        if not original_pitch:
+            raise HTTPException(status_code=404, detail="Original pitch not found")
+        
+        # 2. Get original config and metadata
+        config_dict = original_pitch.get("config", {})
+        config = PitchConfig(**config_dict)
+        
+        # 3. Call regeneration logic with AI
+        new_content = await regenerate_pitch_content(
+            original_content=original_pitch["content"],
+            user_feedback=payload.user_feedback,
+            config=config
+        )
+        
+        # 4. Save new version to database
+        new_version = original_pitch.get("version", 1) + 1
+        
+        pitch_doc = {
+            "lead_id": original_pitch["lead_id"],
+            "company_name": original_pitch["company_name"],
+            "industry": original_pitch["industry"],
+            "content": new_content,
+            "config": config_dict,
+            "services": original_pitch.get("services", []),
+            "generated_by": "Sarah Johnson",
+            "version": new_version,
+            "status": "Active",
+            "created_at": datetime.now(timezone.utc)
+        }
+        
+        result = await db.pitches.insert_one(pitch_doc)
+        
+        return {
+            "id": str(result.inserted_id),
+            "content": new_content,
+            "version": new_version,
+            "message": f"Pitch regenerated successfully (v{new_version})"
+        }
+    except Exception as e:
+        print(f"Error regenerating pitch: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
 
 @router.get("/intelligence/pitches")
 async def get_pitches():
