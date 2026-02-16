@@ -1,5 +1,5 @@
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
-import { useEffect } from "react";
 import { Card } from "@/app/components/ui/card";
 import { Button } from "@/app/components/ui/button";
 import { Badge } from "@/app/components/ui/badge";
@@ -16,17 +16,52 @@ import {
   ArrowRight,
   Plus,
   Brain,
+  Loader2,
 } from "lucide-react";
-import { mockLeads, mockMetrics } from "@/data/mockData";
+import { mockMetrics } from "@/data/mockData";
+import { toast } from "sonner";
 
 export default function Dashboard() {
   const navigate = useNavigate();
+
+  const [leads, setLeads] = useState<any[]>([]);
+  const [pitches, setPitches] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const isAuthenticated = localStorage.getItem("isAuthenticated");
     if (!isAuthenticated) {
       navigate("/");
+      return;
     }
+
+    const fetchData = async () => {
+      try {
+        const baseUrl = (import.meta as any).env.VITE_API_BASE_URL || "http://localhost:8000";
+
+        // Fetch leads and pitches in parallel
+        const [leadsRes, pitchesRes] = await Promise.all([
+          fetch(`${baseUrl}/leads`),
+          fetch(`${baseUrl}/intelligence/pitches`)
+        ]);
+
+        if (leadsRes.ok && pitchesRes.ok) {
+          const leadsData = await leadsRes.json();
+          const pitchesData = await pitchesRes.json();
+          setLeads(leadsData);
+          setPitches(pitchesData);
+        } else {
+          toast.error("Failed to load dashboard data");
+        }
+      } catch (error) {
+        console.error("Dashboard fetch error:", error);
+        toast.error("An error occurred while loading the dashboard");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
   }, [navigate]);
 
   const getTemperatureIcon = (temperature: string) => {
@@ -48,15 +83,23 @@ export default function Dashboard() {
     return "bg-gray-100 text-gray-800 text-xs px-2 py-0.5";
   };
 
-  const pipelineStages = [
-    { name: "New", count: 24, color: "bg-blue-500" },
-    { name: "Contacted", count: 18, color: "bg-indigo-500" },
-    { name: "Proposal", count: 12, color: "bg-purple-500" },
-    { name: "Negotiation", count: 8, color: "bg-pink-500" },
-    { name: "Won", count: 5, color: "bg-green-500" },
-  ];
+  const getPipelineStages = () => {
+    const stages = [
+      { name: "New", color: "bg-blue-500" },
+      { name: "Contacted", color: "bg-indigo-500" },
+      { name: "Proposal", color: "bg-purple-500" },
+      { name: "Negotiation", color: "bg-pink-500" },
+      { name: "Won", color: "bg-green-500" },
+    ];
 
-  const totalLeads = pipelineStages.reduce((sum, stage) => sum + stage.count, 0);
+    return stages.map(stage => ({
+      ...stage,
+      count: leads.filter(l => l.status === stage.name).length
+    }));
+  };
+
+  const pipelineStages = getPipelineStages();
+  const totalLeadsCount = leads.length;
 
   return (
     <MainLayout>
@@ -78,7 +121,9 @@ export default function Dashboard() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-xs text-gray-600 mb-1">Total Leads</p>
-                <p className="text-2xl font-bold text-gray-900">{mockMetrics.totalLeads}</p>
+                <p className="text-2xl font-bold text-gray-900">
+                  {loading ? "..." : leads.length}
+                </p>
               </div>
               <Users className="w-8 h-8 text-gray-400" />
             </div>
@@ -88,7 +133,9 @@ export default function Dashboard() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-xs text-gray-600 mb-1">High-Intent Leads</p>
-                <p className="text-2xl font-bold text-orange-600">{mockMetrics.hotLeads}</p>
+                <p className="text-2xl font-bold text-orange-600">
+                  {loading ? "..." : leads.filter(l => l.score >= 80).length}
+                </p>
               </div>
               <Flame className="w-8 h-8 text-orange-400" />
             </div>
@@ -98,7 +145,9 @@ export default function Dashboard() {
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-xs text-gray-600 mb-1">Pitches Generated</p>
-                <p className="text-2xl font-bold text-gray-900">{mockMetrics.reportsGenerated}</p>
+                <p className="text-2xl font-bold text-gray-900">
+                  {loading ? "..." : pitches.length}
+                </p>
               </div>
               <FileText className="w-8 h-8 text-gray-400" />
             </div>
@@ -107,10 +156,12 @@ export default function Dashboard() {
           <Card className="p-4">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-xs text-gray-600 mb-1">Engagement Drafts</p>
-                <p className="text-2xl font-bold text-gray-900">23</p>
+                <p className="text-xs text-gray-600 mb-1">Unique Companies</p>
+                <p className="text-2xl font-bold text-gray-900">
+                  {loading ? "..." : new Set(leads.map(l => l.companyName)).size}
+                </p>
               </div>
-              <Mail className="w-8 h-8 text-gray-400" />
+              <TrendingUp className="w-8 h-8 text-gray-400" />
             </div>
           </Card>
         </div>
@@ -119,22 +170,30 @@ export default function Dashboard() {
         <Card className="p-6">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-sm font-semibold text-gray-900">Lead Pipeline</h3>
-            <span className="text-xs text-gray-500">{totalLeads} total leads</span>
+            <span className="text-xs text-gray-500">{totalLeadsCount} total leads</span>
           </div>
 
           <div className="space-y-4">
             {/* Horizontal segmented bar */}
-            <div className="flex h-12 rounded-lg overflow-hidden border border-gray-200">
-              {pipelineStages.map((stage, index) => (
-                <button
-                  key={stage.name}
-                  onClick={() => navigate("/leads/repository")}
-                  className={`${stage.color} flex items-center justify-center text-white text-xs font-medium hover:opacity-90 transition-opacity`}
-                  style={{ width: `${(stage.count / totalLeads) * 100}%` }}
-                >
-                  {stage.count}
-                </button>
-              ))}
+            <div className="flex h-12 rounded-lg overflow-hidden border border-gray-200 bg-gray-50">
+              {totalLeadsCount > 0 ? (
+                pipelineStages.map((stage) => (
+                  stage.count > 0 && (
+                    <button
+                      key={stage.name}
+                      onClick={() => navigate("/leads/repository")}
+                      className={`${stage.color} flex items-center justify-center text-white text-xs font-medium hover:opacity-90 transition-opacity`}
+                      style={{ width: `${(stage.count / totalLeadsCount) * 100}%` }}
+                    >
+                      {stage.count}
+                    </button>
+                  )
+                ))
+              ) : (
+                <div className="flex-1 flex items-center justify-center text-gray-400 text-xs italic">
+                  No active pipeline data
+                </div>
+              )}
             </div>
 
             {/* Legend */}
@@ -193,47 +252,72 @@ export default function Dashboard() {
                 </tr>
               </thead>
               <tbody>
-                {mockLeads.map((lead) => (
-                  <tr
-                    key={lead.id}
-                    className="border-b hover:bg-gray-50 transition-colors cursor-pointer"
-                    onClick={() => navigate(`/intelligence/alignment/${lead.id}`)}
-                  >
-                    <td className="py-3 px-6">
-                      <div className="flex items-center gap-2">
-                        {getTemperatureIcon(lead.temperature)}
-                        <span className="text-sm font-medium text-gray-900">
-                          {lead.companyName}
-                        </span>
+                {loading ? (
+                  <tr>
+                    <td colSpan={6} className="py-12 text-center text-gray-500">
+                      <div className="flex flex-col items-center gap-2">
+                        <Loader2 className="w-6 h-6 animate-spin text-blue-600" />
+                        <span>Loading recent leads...</span>
                       </div>
                     </td>
-                    <td className="py-3 px-6">
-                      <span className="text-sm text-gray-600">{lead.industry}</span>
-                    </td>
-                    <td className="py-3 px-6">
-                      <span className="text-xs text-gray-600">{lead.status}</span>
-                    </td>
-                    <td className="py-3 px-6">
-                      <Badge className={getScoreBadge(lead.score)}>{lead.score}%</Badge>
-                    </td>
-                    <td className="py-3 px-6">
-                      <span className="text-xs text-gray-600">{lead.nextAction}</span>
-                    </td>
-                    <td className="py-3 px-6 text-right">
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        className="h-8 text-xs"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          navigate(`/intelligence/alignment/${lead.id}`);
-                        }}
-                      >
-                        View <ArrowRight className="w-3 h-3 ml-1" />
-                      </Button>
+                  </tr>
+                ) : leads.length === 0 ? (
+                  <tr>
+                    <td colSpan={6} className="py-12 text-center text-gray-500">
+                      No leads found. Create your first lead to get started.
                     </td>
                   </tr>
-                ))}
+                ) : (
+                  leads.slice(0, 5).map((lead) => (
+                    <tr
+                      key={lead.id}
+                      className="border-b hover:bg-gray-50 transition-colors cursor-pointer"
+                      onClick={() => navigate(`/intelligence/alignment/${lead.id}`)}
+                    >
+                      <td className="py-3 px-6">
+                        <div className="flex items-center gap-2">
+                          {lead.score >= 80 ? (
+                            <Flame className="w-3.5 h-3.5 text-orange-500" />
+                          ) : lead.score >= 50 ? (
+                            <Zap className="w-3.5 h-3.5 text-yellow-500" />
+                          ) : (
+                            <Droplet className="w-3.5 h-3.5 text-blue-500" />
+                          )}
+                          <span className="text-sm font-medium text-gray-900">
+                            {lead.companyName}
+                          </span>
+                        </div>
+                      </td>
+                      <td className="py-3 px-6">
+                        <span className="text-sm text-gray-600">{lead.industry}</span>
+                      </td>
+                      <td className="py-3 px-6">
+                        <span className="text-xs text-gray-600">{lead.status}</span>
+                      </td>
+                      <td className="py-3 px-6">
+                        <Badge className={getScoreBadge(lead.score)}>{lead.score}%</Badge>
+                      </td>
+                      <td className="py-3 px-6">
+                        <span className="text-xs text-gray-600 font-medium">
+                          {lead.score > 70 ? "Ready for Pitch" : "Profile Incomplete"}
+                        </span>
+                      </td>
+                      <td className="py-3 px-6 text-right">
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          className="h-8 text-xs text-blue-600 hover:text-blue-700 font-medium"
+                          onClick={(e: React.MouseEvent) => {
+                            e.stopPropagation();
+                            navigate(`/intelligence/alignment/${lead.id}`);
+                          }}
+                        >
+                          View <ArrowRight className="w-3 h-3 ml-1" />
+                        </Button>
+                      </td>
+                    </tr>
+                  ))
+                )}
               </tbody>
             </table>
           </div>
