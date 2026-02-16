@@ -14,8 +14,20 @@ import {
     CheckCircle2,
     Calendar,
     User,
-    ExternalLink
+    ExternalLink,
+    Sparkles,
+    Send,
+    Edit3
 } from "lucide-react";
+import {
+    Dialog,
+    DialogContent,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
+    DialogFooter
+} from "@/app/components/ui/dialog";
+import { Textarea } from "@/app/components/ui/textarea";
 import { toast } from "sonner";
 
 export default function PitchResult() {
@@ -23,6 +35,9 @@ export default function PitchResult() {
     const navigate = useNavigate();
     const [pitch, setPitch] = useState<any>(null);
     const [loading, setLoading] = useState(true);
+    const [isRefining, setIsRefining] = useState(false);
+    const [feedback, setFeedback] = useState("");
+    const [isDialogOpen, setIsDialogOpen] = useState(false);
 
     useEffect(() => {
         const fetchPitch = async () => {
@@ -75,6 +90,42 @@ export default function PitchResult() {
         // Export logic placeholder
     };
 
+    const handleRegenerate = async () => {
+        if (!feedback.trim()) {
+            toast.error("Please provide some feedback or instructions for refinement");
+            return;
+        }
+
+        setIsRefining(true);
+        try {
+            const baseUrl = (import.meta as any).env.VITE_API_BASE_URL || "http://localhost:8000";
+            const response = await fetch(`${baseUrl}/intelligence/regenerate-pitch`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    pitch_id: pitchId,
+                    user_feedback: feedback
+                })
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                toast.success(`Proposal refined to v${data.version}!`);
+                setIsDialogOpen(false);
+                setFeedback("");
+                // Navigate to the new pitch version
+                navigate(`/intelligence/pitch-result/${data.id}`);
+            } else {
+                toast.error("Failed to regenerate proposal");
+            }
+        } catch (error) {
+            console.error("Regeneration error:", error);
+            toast.error("An error occurred during regeneration");
+        } finally {
+            setIsRefining(false);
+        }
+    };
+
     if (loading) {
         return (
             <MainLayout>
@@ -103,6 +154,55 @@ export default function PitchResult() {
                             Back to History
                         </Button>
                         <div className="flex items-center gap-3">
+                            <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+                                <DialogTrigger asChild>
+                                    <Button variant="outline" className="h-10 border-blue-200 text-blue-600 hover:bg-blue-50">
+                                        <Sparkles className="w-4 h-4 mr-2" />
+                                        Regenerate
+                                    </Button>
+                                </DialogTrigger>
+                                <DialogContent className="sm:max-w-[500px]">
+                                    <DialogHeader>
+                                        <DialogTitle className="flex items-center gap-2">
+                                            <Edit3 className="w-5 h-5 text-blue-600" />
+                                            Regenerate with AI
+                                        </DialogTitle>
+                                    </DialogHeader>
+                                    <div className="py-4 space-y-4">
+                                        <p className="text-sm text-gray-500">
+                                            Provide instructions to modify the existing proposal. The AI will create a new version (v{pitch.version + 1}) based on your feedback.
+                                        </p>
+                                        <Textarea
+                                            placeholder="e.g., 'Make the executive summary shorter' or 'Add a section about our post-implementation support'"
+                                            className="min-h-[120px] resize-none focus:ring-blue-500 text-sm"
+                                            value={feedback}
+                                            onChange={(e) => setFeedback(e.target.value)}
+                                        />
+                                    </div>
+                                    <DialogFooter>
+                                        <Button variant="ghost" onClick={() => setIsDialogOpen(false)} disabled={isRefining}>
+                                            Cancel
+                                        </Button>
+                                        <Button
+                                            onClick={handleRegenerate}
+                                            disabled={isRefining || !feedback.trim()}
+                                            className="bg-blue-600 hover:bg-blue-700 text-white min-w-[140px]"
+                                        >
+                                            {isRefining ? (
+                                                <>
+                                                    <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                                                    Regenerating...
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <Send className="w-4 h-4 mr-2" />
+                                                    Submit
+                                                </>
+                                            )}
+                                        </Button>
+                                    </DialogFooter>
+                                </DialogContent>
+                            </Dialog>
                             <Button variant="outline" onClick={handleCopyPitch} className="h-10">
                                 <Copy className="w-4 h-4 mr-2" />
                                 Copy Text
@@ -120,9 +220,9 @@ export default function PitchResult() {
                             <CheckCircle2 className="w-6 h-6 text-green-600" />
                         </div>
                         <div className="flex-1">
-                            <h3 className="text-green-900 font-semibold text-lg">Proposal Ready!</h3>
+                            <h3 className="text-green-900 font-semibold text-lg">Proposal v{pitch.version || 1} Ready!</h3>
                             <p className="text-green-700 text-sm">
-                                The enterprise proposal for <strong>{pitch.companyName}</strong> has been generated with professional precision.
+                                The enterprise proposal for <strong>{pitch.companyName}</strong> has been generated. You can now download, copy, or refine it further.
                             </p>
                         </div>
                         <Button
@@ -145,6 +245,46 @@ export default function PitchResult() {
                                     </div>
                                 </div>
                             </Card>
+
+                            {/* Integrated Refinement Input */}
+                            <Card className="p-6 border-blue-100 bg-blue-50/30 overflow-hidden relative group">
+                                <div className="absolute top-0 right-0 p-4 opacity-10">
+                                    <Sparkles className="w-16 h-16 text-blue-600" />
+                                </div>
+                                <div className="relative space-y-4">
+                                    <div className="flex items-center gap-2">
+                                        <div className="p-2 bg-blue-100 rounded-lg">
+                                            <Edit3 className="w-4 h-4 text-blue-600" />
+                                        </div>
+                                        <h4 className="font-semibold text-blue-900">Need adjustments?</h4>
+                                    </div>
+                                    <p className="text-sm text-blue-800/70">
+                                        Enter your feedback below and hit <strong>Regenerate</strong> to create a new version of this proposal.
+                                    </p>
+                                    <div className="flex gap-2">
+                                        <Textarea
+                                            placeholder="e.g. 'Emphasize the cost-saving benefits more'"
+                                            className="bg-white border-blue-200 focus:ring-blue-500 min-h-[44px] h-11 py-2"
+                                            value={feedback}
+                                            onChange={(e) => setFeedback(e.target.value)}
+                                        />
+                                        <Button
+                                            onClick={handleRegenerate}
+                                            disabled={isRefining || !feedback.trim()}
+                                            className="bg-blue-600 hover:bg-blue-700 h-11 px-6 shrink-0"
+                                        >
+                                            {isRefining ? (
+                                                <Loader2 className="w-4 h-4 animate-spin" />
+                                            ) : (
+                                                <>
+                                                    <Sparkles className="w-4 h-4 mr-2" />
+                                                    Regenerate
+                                                </>
+                                            )}
+                                        </Button>
+                                    </div>
+                                </div>
+                            </Card>
                         </div>
 
                         {/* Sidebar Details */}
@@ -155,6 +295,12 @@ export default function PitchResult() {
                                         Proposal Details
                                     </h4>
                                     <div className="space-y-4">
+                                        <div className="flex items-center justify-between py-2 border-b border-gray-50 text-sm">
+                                            <span className="text-gray-500">Version</span>
+                                            <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none px-3">
+                                                v{pitch.version || 1}
+                                            </Badge>
+                                        </div>
                                         <div className="flex items-center justify-between py-2 border-b border-gray-50 text-sm">
                                             <span className="text-gray-500">Company</span>
                                             <span className="font-semibold text-gray-900">{pitch.companyName}</span>

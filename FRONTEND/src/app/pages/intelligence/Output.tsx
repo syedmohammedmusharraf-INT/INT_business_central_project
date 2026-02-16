@@ -22,7 +22,19 @@ import {
   User,
   ChevronDown,
   Loader2,
+  Sparkles,
+  Send,
+  Edit3
 } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+  DialogFooter
+} from "@/app/components/ui/dialog";
+import { Textarea } from "@/app/components/ui/textarea";
 import { toast } from "sonner";
 
 
@@ -34,6 +46,10 @@ export default function Output() {
   const [pitches, setPitches] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [displayCount, setDisplayCount] = useState(5);
+  const [isRefining, setIsRefining] = useState(false);
+  const [feedback, setFeedback] = useState("");
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [pitchToRegenerate, setPitchToRegenerate] = useState<string | null>(null);
 
   React.useEffect(() => {
     const fetchPitches = async () => {
@@ -86,6 +102,42 @@ export default function Output() {
 
   const handleDeletePitch = (pitchId: string) => {
     toast.success("Pitch deleted successfully!");
+  };
+
+  const handleRegenerate = async () => {
+    if (!pitchToRegenerate || !feedback.trim()) {
+      toast.error("Please provide some feedback for regeneration");
+      return;
+    }
+
+    setIsRefining(true);
+    try {
+      const baseUrl = (import.meta as any).env.VITE_API_BASE_URL || "http://localhost:8000";
+      const response = await fetch(`${baseUrl}/intelligence/regenerate-pitch`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          pitch_id: pitchToRegenerate,
+          user_feedback: feedback
+        })
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        toast.success(`Proposal regenerated to v${data.version}!`);
+        setIsDialogOpen(false);
+        setFeedback("");
+        // Redirect to the result page of the new pitch
+        navigate(`/intelligence/pitch-result/${data.id}`);
+      } else {
+        toast.error("Failed to regenerate proposal");
+      }
+    } catch (error) {
+      console.error("Regeneration error:", error);
+      toast.error("An error occurred during regeneration");
+    } finally {
+      setIsRefining(false);
+    }
   };
 
   const getStatusColor = (status: string) => {
@@ -224,6 +276,18 @@ export default function Output() {
                         <Button
                           variant="outline"
                           size="sm"
+                          className="h-9 border-blue-200 text-blue-600 hover:bg-blue-50"
+                          onClick={() => {
+                            setPitchToRegenerate(pitch.id);
+                            setIsDialogOpen(true);
+                          }}
+                        >
+                          <Sparkles className="w-4 h-4 mr-2" />
+                          Regenerate
+                        </Button>
+                        <Button
+                          variant="outline"
+                          size="sm"
                           className="h-9"
                           onClick={() => handleViewPitch(pitch.id)}
                         >
@@ -237,6 +301,13 @@ export default function Output() {
                             </Button>
                           </DropdownMenuTrigger>
                           <DropdownMenuContent align="end" className="w-48">
+                            <DropdownMenuItem onClick={() => {
+                              setPitchToRegenerate(pitch.id);
+                              setIsDialogOpen(true);
+                            }}>
+                              <Sparkles className="w-4 h-4 mr-2" />
+                              Regenerate
+                            </DropdownMenuItem>
                             <DropdownMenuItem onClick={() => handleCopyPitch(pitch.id)}>
                               <Copy className="w-4 h-4 mr-2" />
                               Copy to Clipboard
@@ -329,6 +400,51 @@ export default function Output() {
           )}
         </div>
       </div>
+
+      {/* Regeneration Dialog */}
+      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+        <DialogContent className="sm:max-w-[500px]">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2">
+              <Edit3 className="w-5 h-5 text-blue-600" />
+              Regenerate with AI
+            </DialogTitle>
+          </DialogHeader>
+          <div className="py-4 space-y-4">
+            <p className="text-sm text-gray-500">
+              Provide instructions to modify the existing proposal. The AI will create a new version based on your feedback.
+            </p>
+            <Textarea
+              placeholder="e.g., 'Make the executive summary shorter' or 'Add a section about our post-implementation support'"
+              className="min-h-[120px] resize-none focus:ring-blue-500 text-sm"
+              value={feedback}
+              onChange={(e) => setFeedback(e.target.value)}
+            />
+          </div>
+          <DialogFooter>
+            <Button variant="ghost" onClick={() => setIsDialogOpen(false)} disabled={isRefining}>
+              Cancel
+            </Button>
+            <Button
+              onClick={handleRegenerate}
+              disabled={isRefining || !feedback.trim()}
+              className="bg-blue-600 hover:bg-blue-700 text-white min-w-[140px]"
+            >
+              {isRefining ? (
+                <>
+                  <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                  Regenerating...
+                </>
+              ) : (
+                <>
+                  <Send className="w-4 h-4 mr-2" />
+                  Submit
+                </>
+              )}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </MainLayout>
   );
 }
