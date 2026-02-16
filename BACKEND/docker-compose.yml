@@ -1,5 +1,6 @@
 services:
   backend:
+    image: int_business_central_backend
     build: .
     container_name: int_business_central_backend
     ports:
