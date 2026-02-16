@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import { mockMetrics } from "@/data/mockData";
 import { toast } from "sonner";
+import { API_BASE_URL } from "@/app/utils/api";
 
 export default function Dashboard() {
   const navigate = useNavigate();
@@ -37,12 +38,10 @@ export default function Dashboard() {
 
     const fetchData = async () => {
       try {
-        const baseUrl = (import.meta as any).env.VITE_API_BASE_URL || "http://localhost:8000";
-
         // Fetch leads and pitches in parallel
         const [leadsRes, pitchesRes] = await Promise.all([
-          fetch(`${baseUrl}/leads`),
-          fetch(`${baseUrl}/intelligence/pitches`)
+          fetch(`${API_BASE_URL}/leads`),
+          fetch(`${API_BASE_URL}/intelligence/pitches`)
         ]);
 
         if (leadsRes.ok && pitchesRes.ok) {

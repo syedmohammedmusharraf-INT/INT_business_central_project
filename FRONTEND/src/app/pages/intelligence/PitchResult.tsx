@@ -29,6 +29,7 @@ import {
 } from "@/app/components/ui/dialog";
 import { Textarea } from "@/app/components/ui/textarea";
 import { toast } from "sonner";
+import { API_BASE_URL } from "@/app/utils/api";
 
 export default function PitchResult() {
     const { pitchId } = useParams();
@@ -42,8 +43,7 @@ export default function PitchResult() {
     useEffect(() => {
         const fetchPitch = async () => {
             try {
-                const baseUrl = (import.meta as any).env.VITE_API_BASE_URL || "http://localhost:8000";
-                const response = await fetch(`${baseUrl}/intelligence/pitches/${pitchId}`);
+                const response = await fetch(`${API_BASE_URL}/intelligence/pitches/${pitchId}`);
                 if (response.ok) {
                     const data = await response.json();
                     setPitch(data);
@@ -98,8 +98,7 @@ export default function PitchResult() {
 
         setIsRefining(true);
         try {
-            const baseUrl = (import.meta as any).env.VITE_API_BASE_URL || "http://localhost:8000";
-            const response = await fetch(`${baseUrl}/intelligence/regenerate-pitch`, {
+            const response = await fetch(`${API_BASE_URL}/intelligence/regenerate-pitch`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({

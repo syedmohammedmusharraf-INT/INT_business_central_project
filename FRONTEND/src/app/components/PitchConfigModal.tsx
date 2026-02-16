@@ -13,6 +13,7 @@ import { Checkbox } from "@/app/components/ui/checkbox";
 import { Card } from "@/app/components/ui/card";
 import { Loader2, Sparkles, CheckCircle2 } from "lucide-react";
 import { toast } from "sonner";
+import { API_BASE_URL } from "@/app/utils/api";
 import { mockServices } from "@/data/mockData";
 
 interface PitchConfigModalProps {
@@ -56,8 +57,7 @@ export default function PitchConfigModal({
     setIsGenerating(true);
 
     try {
-      const baseUrl = (import.meta as any).env.VITE_API_BASE_URL || "http://localhost:8000";
-      const response = await fetch(`${baseUrl}/intelligence/generate-pitch`, {
+      const response = await fetch(`${API_BASE_URL}/intelligence/generate-pitch`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -68,6 +68,7 @@ import {
 } from "lucide-react";
 import { mockLeads } from "@/data/mockData";
 import { toast } from "sonner";
+import { API_BASE_URL } from "@/app/utils/api";
 
 export default function ServiceAlignment() {
   const navigate = useNavigate();
@@ -103,11 +104,10 @@ export default function ServiceAlignment() {
       try {
         console.log("ServiceAlignment: Initializing for leadId:", leadId);
         let leadData = null;
-        const baseUrl = (import.meta as any).env.VITE_API_BASE_URL || "http://localhost:8000";
 
         // A. Resolve Lead Data
         try {
-          const leadRes = await fetch(`${baseUrl}/leads/${leadId}`);
+          const leadRes = await fetch(`${API_BASE_URL}/leads/${leadId}`);
           if (leadRes.ok) {
             leadData = await leadRes.json();
           }
@@ -146,9 +146,9 @@ export default function ServiceAlignment() {
           setServices(normalize(location.state.initialData));
           setLoading(false);
         } else {
-          const res = await fetch(`${baseUrl}/intelligence/service-alignment/${leadId}`);
-          if (!res.ok) throw new Error("Failed to fetch service alignment");
-          const data = await res.json();
+          const servicesRes = await fetch(`${API_BASE_URL}/intelligence/service-alignment/${leadId || ""}`);
+          if (!servicesRes.ok) throw new Error("Failed to fetch service alignment");
+          const data = await servicesRes.json();
           setServices(normalize(data));
           setLoading(false);
         }
@@ -158,7 +158,7 @@ export default function ServiceAlignment() {
           setLinkedinLoading(true);
           try {
             console.log("Triggering LinkedIn validation for lead:", leadId);
-            const valRes = await fetch(`${baseUrl}/intelligence/validate-profile/${leadId}`);
+            const valRes = await fetch(`${API_BASE_URL}/intelligence/validate-profile/${leadId}`);
             const profileData = await valRes.json();
 
             if (profileData && profileData.status === "completed") {
@@ -214,11 +214,10 @@ export default function ServiceAlignment() {
   }, [leadId, location.state]);
 
   const handleRetryValidation = async () => {
-    const baseUrl = (import.meta as any).env.VITE_API_BASE_URL || "http://localhost:8000";
     setLinkedinLoading(true);
     toast.info("Retrying LinkedIn validation...");
     try {
-      const valRes = await fetch(`${baseUrl}/intelligence/validate-profile/${leadId}`);
+      const valRes = await fetch(`${API_BASE_URL}/intelligence/validate-profile/${leadId}`);
       const profileData = await valRes.json();
 
       if (profileData && profileData.status === "completed") {
