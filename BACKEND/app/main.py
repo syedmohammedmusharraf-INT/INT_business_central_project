@@ -5,7 +5,10 @@ from app.api.intelligence_route import router as intelligence_router
 from app.api.linkedin_routes import router as linkedin_router
 from app.api.website_extract_routes import router as website_router
 
-app = FastAPI()
+# Add the 'title' parameter here
+app = FastAPI(
+    title="INT Business Central"
+)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
