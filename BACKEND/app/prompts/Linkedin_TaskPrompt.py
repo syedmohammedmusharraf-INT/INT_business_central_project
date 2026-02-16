@@ -1,32 +1,38 @@
 Task = """
-CRITICAL DATA INTEGRITY RULES (STRICT ENFORCEMENT):
-- NEVER use placeholder text like "Post 1 content..." or "Summary of post 2".
-- If you can't find real text for a field, leave it EMPTY or return "".
-- You MUST extract REAL content from the screen. If no posts are visible after clicking "Show all posts", report that no posts were found.
-- Do NOT guess what the posts might be about.
+MISSION:
+You are an expert LinkedIn data extraction specialist. Your goal is to gather highly accurate, REAL profile data and recent activity for the user at {linkedin_url}. 
 
-STRICT BEHAVIORAL CONSTRAINTS:
-- DO NOT click on social interaction buttons (Connect, Message, etc.).
-- STAY FOCUSED on the data fields in the schema.
+CRITICAL DATA INTEGRITY RULES:
+1. NEVER use placeholders (e.g., "Post 1 text..."). Only extract REAL content.
+2. If a section is missing or empty, return an empty string "" or an empty list [].
+3. Handle encoding issues by ignoring emojis if they cause tool failures.
+4. DO NOT click 'Connect', 'Message', or follow buttons.
 
-STEPS:
-1. Navigate to: {linkedin_url} profile.
-2. Sign in using the provided x_user and x_pass if not already logged in. Do NOT try to sign in multiple times.
-3. Extract 'Full name', 'Profile headline', and a 'Profile summary' (the "About" section).
+EXTRACTION STEPS:
 
-4. Extract Recent Posts (Maximum 5):
-   - Scroll to the "Activity" section.
-   - Click the "Show all posts" link/button. This is critical for full content.
-   - For EACH of the top 5 updates/posts:
-     - Click "see more" or "...more" if it exists to expand the text.
-     - Extract the ACTUAL text of the post.
-     - Summarize it briefly.
-   - If there are fewer than 5 posts, just extract what is available. Do NOT invent posts to reach 5.
+1. AUTHENTICATION & NAVIGATION:
+   - Navigate to: {linkedin_url}
+   - If a login wall appears, use documented credentials: x_user and x_pass from sensitive_data. 
+   - DO NOT attempt multiple logins if one fails.
 
-5. Extract Experience & Skills:
-   - Go back to the profile if needed.
-   - Extract the full list of Experiences (titles, companies, dates, descriptions).
-   - Extract the full list of Skills from the "Skills" section.
+2. CORE PROFILE DATA:
+   - Extract 'Full name', 'Profile headline', and 'About' summary.
+   - Use page scrolling to ensure elements are loaded.
 
-6. Provide the final JSON result strictly matching the schema.
+3. RECENT ACTIVITY (CRITICAL):
+   - Locate the 'Activity' or 'Posts' section.
+   - USE THE CUSTOM TOOL `click_show_all_posts` to navigate to the full activity feed. 
+   - Once on the posts page, extract the top 5 REAL posts.
+   - For each post, click "see more" if the text is truncated.
+   - Provided REAL text and a concise summary for each.
+
+4. EXPERIENCE & SKILLS:
+   - Go back to the main profile or navigate directly to sections.
+   - USE THE CUSTOM TOOL `click_show_all_experiences` if the profile has many entries.
+   - USE THE CUSTOM TOOL `click_show_all_skills` to access the full skills list.
+   - Ensure you scroll through these lists to capture all details.
+
+5. FINALIZATION:
+   - Verify all fields in the output schema are populated with REAL data.
+   - Provide the final result strictly as JSON.
 """
