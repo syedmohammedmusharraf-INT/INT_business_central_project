@@ -648,7 +648,7 @@ Sarah Johnson`;
               )}
 
               {/* Floating Selection Bar */}
-              {selectedServices.length > 0 && (
+              {selectedServices.length > 0 && !isPitchModalOpen && (
                 <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-[100] w-full max-w-4xl px-6 animate-in fade-in slide-in-from-bottom-8 duration-700">
                   <div className="bg-white/70 backdrop-blur-xl border border-blue-100/50 shadow-[0_20px_50px_rgba(0,0,0,0.15)] rounded-3xl p-4 flex items-center justify-between ring-1 ring-black/5">
                     <div className="flex-1 overflow-hidden">
@@ -839,9 +839,9 @@ Sarah Johnson`;
         onClose={() => setIsPitchModalOpen(false)}
         leadId={leadId}
         selectedServices={selectedServices}
-        onPitchGenerated={() => {
+        onPitchGenerated={(pitchId: string) => {
           setIsPitchModalOpen(false);
-          window.location.href = "/intelligence/output";
+          navigate(`/intelligence/pitch-result/${pitchId}`);
         }}
       />
     </MainLayout >

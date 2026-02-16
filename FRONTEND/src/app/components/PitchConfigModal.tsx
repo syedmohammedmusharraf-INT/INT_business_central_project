@@ -20,7 +20,7 @@ interface PitchConfigModalProps {
   onClose: () => void;
   leadId: string | undefined;
   selectedServices: string[];
-  onPitchGenerated: (config: any, content: string) => void;
+  onPitchGenerated: (pitchId: string) => void;
 }
 
 export default function PitchConfigModal({
@@ -80,8 +80,7 @@ export default function PitchConfigModal({
       setTimeout(() => {
         setIsGenerating(false);
         onClose();
-        // Redirect to detail page instead of general history
-        window.location.href = `/intelligence/pitch-result/${result.id}`;
+        onPitchGenerated(result.id);
       }, 1000);
 
     } catch (error) {
