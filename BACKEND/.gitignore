@@ -10,3 +10,4 @@ wheels/
 .venv
 .env
 data_lead_documents/
+VECTOR_DB/
