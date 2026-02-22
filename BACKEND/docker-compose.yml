@@ -1,12 +1,21 @@
+# we can build multiple docker containers from here.
+# all commands have been written in key-value pair
 services:
-  backend:
+  int_business_central_backend:
     image: int_business_central_backend
-    build: .
     container_name: int_business_central_backend
+    build:
+      context: .
     ports:
       - "3003:3003"
     env_file:
       - .env
-    volumes:
+    volumes: # mapping of volumes from host to container volumes
       - ./VECTOR_DB:/app/VECTOR_DB
     restart: always
+    # healthcheck:
+    #   test: ["CMD", "curl", "-f", "http://localhost:3003/health"]
+    #   interval: 30s
+    #   timeout: 10s
+    #   retries: 5
+    #   start_period: 30s
