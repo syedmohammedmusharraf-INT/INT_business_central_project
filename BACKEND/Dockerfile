@@ -1,13 +1,17 @@
 # =========================
 # 1️⃣ Builder Stage
 # =========================
-FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim AS builder
+# base image extraction
+FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim AS builder  
 
 WORKDIR /app
 
 # Disable bytecode compilation to prevent timeouts on large files (like pymupdf)
 ENV UV_COMPILE_BYTECODE=0
 ENV UV_LINK_MODE=copy
+
+# Set Playwright browsers path to ensure they are installed inside /app
+ENV PLAYWRIGHT_BROWSERS_PATH=/app/.playwright
 
 # Install system dependencies for Playwright
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -39,7 +43,7 @@ COPY pyproject.toml uv.lock ./
 RUN uv sync --frozen --no-install-project --no-dev
 
 # Install Playwright browser
-RUN uv run playwright install chromium
+RUN uv run --no-sync playwright install chromium
 
 # Copy full source
 COPY . .
@@ -55,6 +59,9 @@ RUN uv sync --frozen --no-dev
 FROM ghcr.io/astral-sh/uv:python3.12-bookworm-slim AS runtime
 
 WORKDIR /app
+
+# Ensure Playwright looks for browsers in the correct location
+ENV PLAYWRIGHT_BROWSERS_PATH=/app/.playwright
 
 # Install ONLY runtime libs required by chromium
 RUN apt-get update && apt-get install -y --no-install-recommends \
